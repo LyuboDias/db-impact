@@ -15,4 +15,54 @@
     color: white;
   }
 }
+.text-big {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+   h2 {
+    font-size: 7em;
+   }
+   p {
+    font-size: 3em;
+    color: rgb(100, 100 ,100);
+   }
+}
+.photos-divs {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+}
+.pic-1 {
+background-image:url("ppl-shakehands.jpeg");
+}
+.pic-2 {
+background-image: url("team-agreed.jpeg");
+}
+.pic-3 {
+background-image: url("team-meeting.jpeg");
+}
+.pic-4 {
+background-image: url("team-table.jpeg");
+}
+.big-text {
+font-size: 7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
