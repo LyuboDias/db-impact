@@ -1,41 +1,29 @@
 <div class="banner">
-  <h1 class="big-text">Biswas Social Impact Advisory</h1>
-
+    <%= video_tag "video-banner.MP4", autoplay: :autoplay, loop: :loop, muted: :muted, id: "myVideo", playsinline: true %>
+  <h1 class="big-text">Biswas <br> Social Impact Advisory</h1>
 </div>
-<div class="text-big">
+<div class="text-big" data-aos="fade-right">
   <h2>We believe private equity is about people, not transactions.</h2>
 </div>
-<div class="photos-divs pic-1"></div>
-<div class="text-big">
-  <h2>Trust</h2>
-  <p>WE EARN IT.</p>
-</div>
-<div class="photos-divs pic-2"></div>
-<div class="text-big">
-  <h2>Partnership </h2>
-  <p>WE EMPHASIZE IT.</p>
-</div>
-<div class="photos-divs pic-3"></div>
-<div class="text-big">
-  <h2>Value</h2>
-  <p>WE HELP YOU CREATE IT.</p>
-</div>
-<div class="photos-divs pic-4"></div>
 
 <div class="container">
-  <div class="row">
+  <div class="row mt-5">
     <div class="col-7">
-      <div class="box" data-aos="zoom-in-right">
-
+      <div class="box">
+        <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image-long" %>
+        <div class="text-inner-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit optio dolorum assumenda libero aut placeat.</p>
+        </div>
       </div>
       <div class="box">
-
+        <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image-long" %>
+        <div class="text-inner">
+          <p>Lorem ipsum, dolor sit.</p>
+        </div>
       </div>
     </div>
     <div class="col-5 ">
-      <div class="box1" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
+      <div class="box1">
     <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image" %>
         <div class="text-inner">
           <p>Lorem ipsum, dolor sit.</p>
@@ -44,31 +32,65 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row mb-5">
     <div class="col-3">
       <div class="box3">
-
+        <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image" %>
+        <div class="text-inner">
+          <p>Lorem ipsum, dolor sit.</p>
+        </div>
       </div>
     </div>
     <div class="col-6">
       <div class="box3">
-
+        <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image" %>
+        <div class="text-inner-box3">
+          <p>Lorem ipsum, dolor sit.</p>
+        </div>
       </div>
     </div>
     <div class="col-3">
-      <div id="contact" class="box3">
-
+      <div class="box3">
+        <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image" %>
+        <div class="text-inner">
+          <p>Lorem ipsum, dolor sit.</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-
-
-
-
-
-
-
+<div class="photos-divs pic-1"></div>
+<div class="text-big" data-aos="fade-left">
+  <h2>Trust</h2>
+  <p>WE EARN IT.</p>
+</div>
+<div class="photos-divs pic-2"></div>
+<div class="text-big" data-aos="fade-right">
+  <h2>Partnership </h2>
+  <p>WE EMPHASIZE IT.</p>
+</div>
+<div class="photos-divs pic-3"></div>
+<div class="text-big" data-aos="fade-left">
+  <h2>Value</h2>
+  <p>WE HELP YOU CREATE IT.</p>
+</div>
+<div class="photos-divs pic-4"></div>
+<!-- contacts div -->
+<div id="contacts" class="contacts">
+  <ul>
+    <strong>Contacts</strong>
+    <li>Tel: 0208 923 213</li>
+    <li>Mob: 0758 6738382</li>
+    <li>email: contact@bisimpact.com</li>
+  </ul>
+  <ul class="inline">
+    <strong>Address</strong>
+    <li>123 London Road</li>
+    <li>London</li>
+    <li>SW1U 1TE</li>
+    <li>UK</li>
+  </ul>
+</div>
 
 
