@@ -1,8 +1,7 @@
 // Specific CSS for your home-page
-body[data-aos-duration='10000'] [data-aos],
-  [data-aos][data-aos][data-aos-duration='10000'] {
-    transition-duration: 10000ms;
-  }
+html {
+   scroll-behavior: smooth;
+}
   // neeed to change the timing of AOS
   #myVideo {
   position: absolute;
@@ -34,6 +33,7 @@ body[data-aos-duration='10000'] [data-aos],
   width: 100%;
   margin: 50px auto;
   text-align: center;
+  padding: 100px;
    h2 {
     font-size: 4.5em;
     color: $main-color;
@@ -60,16 +60,16 @@ body[data-aos-duration='10000'] [data-aos],
 }
 
 .pic-1 {
-background-image:url("ppl-shakehands.jpeg");
+background-image:url("Rwanda-Landscape.jpg");
 }
 .pic-2 {
-background-image: url("team-agreed.jpeg");
+background-image: url("Rwanda-Traditional-Dance.jpg");
 }
 .pic-3 {
-background-image: url("team-meeting.jpeg");
+background-image: url("Tunisia-Market.jpg");
 }
 .pic-4 {
-background-image: url("team-table.jpeg");
+background-image: url("Tunisia-Skyline.jpg");
 }
 .big-text {
 font-size: 7em;
@@ -159,12 +159,21 @@ font-size: 7em;
 // contacts div
 .contacts {
   display: flex;
+  color: $main-color;
   ul {
     padding: 20px;
     list-style: none;
   }
 }
-
+// ------back to top------
+.back-to-top {
+color: $main-color;
+font-size: 4em;
+z-index: 22;
+position: fixed;
+bottom: 10px;
+right: 20px;
+}
 
 
 
