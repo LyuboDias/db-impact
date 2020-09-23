@@ -1,3 +1,7 @@
+
+<!-- ------------back to top--------- -->
+<a href="#" class="back-to-top"><i class="fas fa-angle-double-up"></i></a>
+<!-- --------------------- -->
 <div class="banner">
     <%= video_tag "video-banner.MP4", autoplay: :autoplay, loop: :loop, muted: :muted, id: "myVideo", playsinline: true %>
   <h1 class="big-text">Biswas <br> Social Impact Advisory</h1>
@@ -16,7 +20,7 @@
         </div>
       </div>
       <div class="box">
-        <%= image_tag "Rwanda-Landscape.jpg", class: "box-image-long" %>
+        <%= image_tag "Turkey-Cityscape.jpg", class: "box-image-long" %>
         <div class="text-inner">
           <p>Lorem ipsum, dolor sit.</p>
         </div>
@@ -24,7 +28,7 @@
     </div>
     <div class="col-5 ">
       <div class="box1">
-    <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image" %>
+    <%= image_tag "Uganda-Organised-Chaos.jpg", class: "box-image" %>
         <div class="text-inner">
           <p>Lorem ipsum, dolor sit.</p>
         </div>
@@ -35,7 +39,7 @@
   <div class="row mb-5">
     <div class="col-3">
       <div class="box3">
-        <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image" %>
+        <%= image_tag "China-Boats.jpg", class: "box-image" %>
         <div class="text-inner">
           <p>Lorem ipsum, dolor sit.</p>
         </div>
@@ -43,7 +47,7 @@
     </div>
     <div class="col-6">
       <div class="box3">
-        <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image" %>
+        <%= image_tag "China-Mountains.jpg", class: "box-image" %>
         <div class="text-inner-box3">
           <p>Lorem ipsum, dolor sit.</p>
         </div>
@@ -51,7 +55,7 @@
     </div>
     <div class="col-3">
       <div class="box3">
-        <%= image_tag "https://images.unsplash.com/photo-1520052203542-d3095f1b6cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80", class: "box-image" %>
+        <%= image_tag "banner-img.jpg", class: "box-image" %>
         <div class="text-inner">
           <p>Lorem ipsum, dolor sit.</p>
         </div>
@@ -59,7 +63,13 @@
     </div>
   </div>
 </div>
-
+<!-- -----------------strategy----------- -->
+<div id="strategy" class="text-big" data-aos="fade-right">
+  <h2>Experts at supporting corporate entities and philanthropists to make a social difference</h2>
+  <p>For us, growth of the bottom-line is not enough. In the 21st century, clients and consumers now expect to see their partners of choice contribute back into society. We work closely with businesses that are attuned to these ground realities and want to make a social contribution back, to do so in the most constructive way. We apply our expertise in Economics and Consultancy to help management teams identify the causes they want to support, the areas where they can create additional value and support them to really make a difference.
+We support philanthropists with their deepest passions. Having a vision is one thing, but knowing how to execute is another.</p>
+</div>
+<!-- -------------- -->
 <div class="photos-divs pic-1"></div>
 <div class="text-big" data-aos="fade-left">
   <h2>Trust</h2>
@@ -91,6 +101,10 @@
     <li>SW1U 1TE</li>
     <li>UK</li>
   </ul>
+  <div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['pk.eyJ1IjoibHl1Ym9kaWFzIiwiYSI6ImNrZGE2OWd5NDBmOHAzMXQ5aGZuYjFseHoifQ.9D58gV3sIISuL7pe0dDxyQ'] %>"></div>
 </div>
 
 
