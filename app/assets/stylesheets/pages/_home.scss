@@ -25,7 +25,7 @@ body[data-aos-duration='10000'] [data-aos],
   width: 100%;
   text-align: center;
   h1 {
-    color: white;
+    color: $second-color;
     font-size: 5em;
     padding-bottom: 100px;
   }
@@ -36,10 +36,12 @@ body[data-aos-duration='10000'] [data-aos],
   text-align: center;
    h2 {
     font-size: 4.5em;
+    color: $main-color;
    }
    p {
     font-size: 2em;
-    color: rgb(100, 100 ,100);
+    color: $main-color;
+    opacity: 0.5;
    }
 }
 // css grid of pics
@@ -121,7 +123,7 @@ font-size: 7em;
   width: 100%;
   text-align: center;
   padding: 30px;
-  color: white;
+  color: $second-color;
   position: absolute;
   top: 0;
   left: 0;
@@ -131,7 +133,7 @@ font-size: 7em;
   width: 100%;
   text-align: center;
   padding: 30px;
-  color: white;
+  color: $second-color;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -141,7 +143,7 @@ font-size: 7em;
   width: 35%;
   text-align: center;
   padding: 30px;
-  color: white;
+  color: $second-color;
   position: absolute;
   top: 0;
   left: 0;
