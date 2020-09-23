@@ -25,11 +25,17 @@ require("channels")
 // External imports
 import "bootstrap";
 
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import '../custom/navbar.js'
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+// need to pseed down the video banner
+
 document.querySelector('video').playbackRate = 0.4;
+
