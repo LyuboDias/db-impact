@@ -1,6 +1,10 @@
 // Specific CSS for your home-page
+body {
+  overflow-x: hidden;
+}
+
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
   // neeed to change the timing of AOS
   #myVideo {
@@ -37,15 +41,15 @@ html {
   margin: 50px auto;
   text-align: center;
   padding: 100px;
-   h2 {
+  h2 {
     font-size: 4.5em;
     color: $main-color;
-   }
-   p {
+  }
+  p {
     font-size: 2em;
     color: $main-color;
     opacity: 0.5;
-   }
+  }
 }
 // css grid of pics
 
