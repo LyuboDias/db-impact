@@ -4,7 +4,7 @@
 <!-- --------------------- -->
 <div class="banner">
     <%= video_tag "video-banner.MP4", autoplay: :autoplay, loop: :loop, muted: :muted, id: "myVideo", playsinline: true %>
-     <%= image_tag "output-onlinepngtools.png", class: "banner-logo" %>
+     <%= image_tag "logo-transparent.png", class: "banner-logo" %>
   <!-- <h1 class="big-text">Biswas <br> Social Impact Advisory</h1> -->
 </div>
 <div class="text-big" data-aos="fade-right">
@@ -21,9 +21,10 @@
         </div>
       </div>
       <div class="box">
-        <%= image_tag "Turkey-Cityscape.jpg", class: "box-image-long" %>
+        <%= cl_image_tag("joajmabi3oh9xgvp1cpc", class: "box-image-long",
+      width: 400, height: 300, crop: :fill) %>
         <div class="text-inner">
-          <p>Lorem ipsum, dolor sit.</p>
+          <p>Hello Deep</p>
         </div>
       </div>
     </div>
