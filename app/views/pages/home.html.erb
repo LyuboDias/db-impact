@@ -4,13 +4,14 @@
 <!-- --------------------- -->
 <div class="banner">
     <%= video_tag "video-banner.MP4", autoplay: :autoplay, loop: :loop, muted: :muted, id: "myVideo", playsinline: true %>
-  <h1 class="big-text">Biswas <br> Social Impact Advisory</h1>
+     <%= image_tag "output-onlinepngtools.png", class: "banner-logo" %>
+  <!-- <h1 class="big-text">Biswas <br> Social Impact Advisory</h1> -->
 </div>
 <div class="text-big" data-aos="fade-right">
   <h2>We believe private equity is about people, not transactions.</h2>
 </div>
 
-<div class="container">
+<div class="container" data-aos="zoom-in">
   <div class="row mt-5">
     <div class="col-7">
       <div class="box">
@@ -70,23 +71,24 @@
 We support philanthropists with their deepest passions. Having a vision is one thing, but knowing how to execute is another.</p>
 </div>
 <!-- -------------- -->
-<div class="photos-divs pic-1"></div>
+<div class="photos-divs pic-1" data-aos="flip-left">></div>
 <div class="text-big" data-aos="fade-left">
   <h2>Trust</h2>
   <p>WE EARN IT.</p>
 </div>
-<div class="photos-divs pic-2"></div>
+
+<div class="photos-divs pic-2" data-aos="flip-right">></div>
 <div class="text-big" data-aos="fade-right">
   <h2>Partnership </h2>
   <p>WE EMPHASIZE IT.</p>
 </div>
-<div class="photos-divs pic-3"></div>
+<div class="photos-divs pic-3" data-aos="flip-left">></div>
 <div class="text-big" data-aos="fade-left">
   <h2>Value</h2>
   <p>WE HELP YOU CREATE IT.</p>
 </div>
-<div class="photos-divs pic-4"></div>
-<!-- contacts div -->
+  <div class="photos-divs pic-4" data-aos="flip-right">></div>
+  <!-- contacts div -->
 <div id="contacts" class="contacts">
   <ul>
     <strong>Contacts</strong>
@@ -101,10 +103,11 @@ We support philanthropists with their deepest passions. Having a vision is one t
     <li>SW1U 1TE</li>
     <li>UK</li>
   </ul>
+
   <div id="map"
-     style="width: 100%; height: 600px;"
+     style="width: 50%; height: 200px;"
      data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="<%= ENV['pk.eyJ1IjoibHl1Ym9kaWFzIiwiYSI6ImNrZGE2OWd5NDBmOHAzMXQ5aGZuYjFseHoifQ.9D58gV3sIISuL7pe0dDxyQ'] %>"></div>
+     data-mapbox-api-key="<%= ENV['pk.eyJ1IjoibHl1Ym9kaWFzIiwiYSI6ImNrZmpjeTNqYTFoMWwyeW8zOHhmYzRzdXgifQ.7FEknlXhw9VnKxDOKSBJDw'] %>"></div>
 </div>
 
 
