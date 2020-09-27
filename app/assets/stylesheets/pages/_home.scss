@@ -1,4 +1,3 @@
-// Specific CSS for your home-page
 body {
   overflow-x: hidden;
 }
@@ -6,7 +5,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-  // neeed to change the timing of AOS
   #myVideo {
   position: absolute;
   right: 0;
@@ -35,7 +33,7 @@ html {
 }
 .banner-logo {
   width: 500px;
-  margin-top: 175px;
+  margin-bottom: 150px;
 }
 .text-big {
   width: 100%;
