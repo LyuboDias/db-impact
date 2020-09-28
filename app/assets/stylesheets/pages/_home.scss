@@ -1,10 +1,41 @@
-body {
-  overflow-x: hidden;
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
-
-html {
-  scroll-behavior: smooth;
+// --------------scrolling text-----------------
+.news {
+  background-color: black;
+  color: white;
+  line-height: 40px;
+  font-size: 20px;
+  padding: 10px;
 }
+.marquee {
+    width: 100%;
+    line-height: 40px;
+    background-color: rgb(252,234,0);
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+}
+.marquee p {
+    margin: auto 0;
+    font-size: 20px;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 65s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+// --------------------------------------------
 #myVideo {
   position: absolute;
   right: 0;
@@ -21,11 +52,10 @@ html {
   align-items: center;
   height: 100vh;
   text-align: center;
-  position: relative;
+  margin: 0!important;
 }
 .banner-logo {
   width: 500px;
-  position: absolute;
 }
 .text-big {
   text-align: center;
@@ -41,7 +71,7 @@ html {
   }
 }
 
-.pic-1 {
+.lg-photos {
   width: 100%;
   height: auto;
 }
@@ -97,6 +127,7 @@ html {
   width: 100%;
   height: 290px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .text-inner {
@@ -149,11 +180,18 @@ html {
   color: $main-color;
   justify-content: space-between;
   padding: 20px;
-  background: rgb(176,192,198);
+  // background: #480355;
+  // .ul-wrap {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
   ul {
-    padding: 20px;
-    margin-left: 20px;
+    padding-left: 0;
     list-style: none;
+    strong {
+      font-size: 24px;
+    }
   }
 }
 // ------back to top---------------------------
@@ -166,14 +204,8 @@ bottom: 10px;
 right: 20px;
 }
 // -------------media query breakpoints-------
-.example {
-  padding: 20px;
-  color: white;
-
-}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .example {background: red;}
    .banner-logo {
     width: 240px;
   }
@@ -194,7 +226,7 @@ right: 20px;
     height:230px;
     width: 310px;
     margin: 0 auto;
-    .map-widht {
+    .map-width {
       width: 300px;
     }
   }
@@ -202,15 +234,11 @@ right: 20px;
     display: block;
     padding: 20px;
     text-align: center;
-    ul {
-      padding: 20px;
-    }
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .example {background: green;}
    .banner-logo {
     width: 300px;
   }
@@ -236,15 +264,14 @@ right: 20px;
     display: block;
     padding: 20px;
     text-align: center;
-    ul {
-      padding: 20px;
-    }
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .example {background: blue;}
+  body {
+    overflow-x: hidden;
+  }
   .banner-logo {
     width: 400px;
   }
@@ -270,16 +297,18 @@ right: 20px;
     display: block;
     padding: 20px;
     text-align: center;
-    ul {
-      padding: 20px;
+    .inline {
+      margin: 0 auto;
+      padding-top: 50px;
     }
   }
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .example {background: orange;}
+  body {
+    overflow-x: hidden;
+  }
   .banner-logo {
     width: 400px;
   }
@@ -300,12 +329,11 @@ right: 20px;
     color: $main-color;
     justify-content: space-between;
     padding: 20px;
-    background: rgb(176,192,198);
     text-align: left;
-    ul {
-      padding: 20px;
-      list-style: none;
-    }
+      .inline {
+        margin: 0 auto;
+        padding-top: 50px;
+      }
   }
 }
 // -----------------------------------------------------------------

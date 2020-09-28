@@ -1,119 +1,131 @@
 <div class="my_app_container">
-<!-- ------------back to top--------- -->
-<a href="#" class="back-to-top"><i class="fas fa-angle-double-up"></i></a>
-<!-- --------------------- -->
-<p class="example">Resize the browser window to see how the background color of this paragraph changes on different screen sizes.</p>
-<div class="banner">
-    <%= video_tag "video-banner.MP4", autoplay: :autoplay, loop: :loop, muted: :muted, id: "myVideo", playsinline: true %>
-    <%= image_tag "logo-transparent1.png", class: "banner-logo" %>
-</div>
-<div class="text-big" data-aos="fade-right">
-  <h2>We believe private equity is about people, not transactions.</h2>
-</div>
+  <!-- ------------back to top--------- -->
+  <a href="#" class="back-to-top"><i class="fas fa-angle-double-up"></i></a>
+  <!-- --------------------- -->
 
-<div class="container" data-aos="zoom-in">
-  <div class="row mt-5">
-    <div class="col-7">
-      <div class="box">
-        <%= image_tag "China-Agriculture.jpg", class: "box-image-long" %>
-        <div class="text-inner-box">
-          <p>hello ISTVAN Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit optio dolorum assumenda libero aut placeat.</p>
+    <div class="marquee">
+      <p><strong class="news">Latest News</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid unde natus distinctio magnam, ipsa quidem quis numquam. Id magni non libero voluptatibus <strong class="news">Latest News</strong>doloribus quasi, ut suscipit, debitis distinctio soluta voluptates necessitatibus deserunt asperiores ex! Nostrum, impedit blanditiis, esse dolor, praesentium in, aliquid cum <strong class="news">Latest News</strong>cupiditate culpa molestias qui delectus velit.<strong class="news">Latest News</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid unde natus distinctio magnam, ipsa quidem quis numquam. Id magni non libero voluptatibus <strong class="news">Latest News</strong>doloribus quasi, ut suscipit, debitis distinctio soluta voluptates necessitatibus deserunt asperiores ex! Nostrum, impedit blanditiis, esse dolor, praesentium in, aliquid cum <strong class="news">Latest News</strong>cupiditate culpa molestias qui delectus velit.</p>
+    </div>
+
+
+  <!-- ----------------banner --------->
+  <div class="banner">
+      <%= video_tag "video-banner.MP4", autoplay: :autoplay, loop: :loop, muted: :muted, id: "myVideo", playsinline: true %>
+      <%= image_tag "logo-transparent1.png", class: "banner-logo" %>
+  </div>
+  <!-- ---------------------------- -->
+
+  <div class="text-big" data-aos="fade-right">
+    <h2>We believe private equity is about people, not transactions.</h2>
+  </div>
+
+  <!-- ---------css grid-------------- -->
+
+  <div class="container" data-aos="zoom-in">
+
+    <div class="row mt-5 mb-5 wrap">
+      <div class="col-lg-7 col-md-12">
+        <div class="box">
+          <%= image_tag "China-Agriculture.jpg", class: "box-image-long" %>
+          <div class="text-inner-box">
+            <p>hello ISTVAN Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit optio dolorum assumenda libero aut placeat.</p>
+          </div>
+        </div>
+        <div class="box">
+          <%= image_tag "Turkey-Cityscape.jpg", class: "box-image-long" %>
+          <div class="text-inner">
+            <p>Lorem ipsum, dolor sit.</p>
+          </div>
         </div>
       </div>
-      <div class="box">
-        <%= image_tag "Turkey-Cityscape.jpg", class: "box-image-long" %>
-        <div class="text-inner">
-          <p>Lorem ipsum, dolor sit.</p>
+      <div class="col-lg-5 col-md-12">
+        <div class="box1">
+      <%= image_tag "banner-img.jpg", class: "box-image" %>
+          <div class="text-inner">
+            <p>Lorem ipsum, dolor sit.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-5 ">
-      <div class="box1">
-    <%= image_tag "banner-img.jpg", class: "box-image" %>
-        <div class="text-inner">
-          <p>Lorem ipsum, dolor sit.</p>
+
+    <div class="row mb-5 wrap">
+      <div class="col-lg-3 col-md-12">
+        <div class="box3">
+          <%= cl_image_tag("joajmabi3oh9xgvp1cpc", class: "box-image") %>
+          <div class="text-inner">
+            <p>Lorem ipsum, dolor sit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="box3">
+          <%= image_tag "China-Mountains.jpg", class: "box-image" %>
+          <div class="text-inner-box3">
+            <p>Lorem ipsum, dolor sit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12">
+        <div class="box3">
+          <%= image_tag "Kathmandu-Business.jpg", class: "box-image" %>
+          <div class="text-inner">
+            <p>Lorem ipsum, dolor sit.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="row mb-5">
-    <div class="col-3">
-      <div class="box3">
-        <%#= image_tag "China-Boats.jpg", class: "box-image" %>
-        <%= cl_image_tag("joajmabi3oh9xgvp1cpc",
-        width: 400, height: 300, crop: :fill) %>
-        <div class="text-inner">
-          <p>Lorem ipsum, dolor sit.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="box3">
-        <%= image_tag "China-Mountains.jpg", class: "box-image" %>
-        <div class="text-inner-box3">
-          <p>Lorem ipsum, dolor sit.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="box3">
-        <%= image_tag "Kathmandu-Business.jpg", class: "box-image" %>
-        <div class="text-inner">
-          <p>Lorem ipsum, dolor sit.</p>
-        </div>
-      </div>
-    </div>
+  <!-- -----------------strategy----------- -->
+  <div id="strategy" class="text-big" data-aos="fade-right">
+    <h2>Experts at supporting corporate entities and philanthropists to make a social difference</h2>
+    <p>For us, growth of the bottom-line is not enough. In the 21st century, clients and consumers now expect to see their partners of choice contribute back into society. We work closely with businesses that are attuned to these ground realities and want to make a social contribution back, to do so in the most constructive way. We apply our expertise in Economics and Consultancy to help management teams identify the causes they want to support, the areas where they can create additional value and support them to really make a difference.
+    We support philanthropists with their deepest passions. Having a vision is one thing, but knowing how to execute is another.</p>
   </div>
-</div>
-<!-- -----------------strategy----------- -->
-<div id="strategy" class="text-big" data-aos="fade-right">
-  <h2>Experts at supporting corporate entities and philanthropists to make a social difference</h2>
-  <p>For us, growth of the bottom-line is not enough. In the 21st century, clients and consumers now expect to see their partners of choice contribute back into society. We work closely with businesses that are attuned to these ground realities and want to make a social contribution back, to do so in the most constructive way. We apply our expertise in Economics and Consultancy to help management teams identify the causes they want to support, the areas where they can create additional value and support them to really make a difference.
-We support philanthropists with their deepest passions. Having a vision is one thing, but knowing how to execute is another.</p>
-</div>
-<!-- -------------- -->
-<div data-aos="flip-left">
-    <%= image_tag "Rwanda-Landscape.jpg", class: "pic-1" %>
-</div>
-<div class="text-big" data-aos="fade-left">
-  <h2>Trust</h2>
-  <p>WE EARN IT.</p>
-</div>
+  <!-- -------------- -->
+  <div data-aos="flip-left">
+      <%= image_tag "Rwanda-Landscape.jpg", class: "lg-photos" %>
+  </div>
+  <div class="text-big" data-aos="fade-left">
+    <h2>Trust</h2>
+    <p>WE EARN IT.</p>
+  </div>
 
-<div class="photos-divs pic-2" data-aos="flip-right">
-  <%= image_tag "Rwanda-Traditional-Dance.jpg", class: "pic-1" %>
-</div>
-<div class="text-big" data-aos="fade-right">
-  <h2>Partnership </h2>
-  <p>WE EMPHASIZE IT.</p>
-</div>
-<div class="photos-divs pic-3" data-aos="flip-left">
-  <%= image_tag "Tunisia-Market.jpg", class: "pic-1" %>
-</div>
-<div class="text-big" data-aos="fade-left">
-  <h2>Value</h2>
-  <p>WE HELP YOU CREATE IT.</p>
-</div>
+  <div class="photos-divs pic-2" data-aos="flip-right">
+    <%= image_tag "Rwanda-Traditional-Dance.jpg", class: "lg-photos" %>
+  </div>
+  <div class="text-big" data-aos="fade-right">
+    <h2>Partnership </h2>
+    <p>WE EMPHASIZE IT.</p>
+  </div>
+  <div class="photos-divs pic-3" data-aos="flip-left">
+    <%= image_tag "Tunisia-Market.jpg", class: "lg-photos" %>
+  </div>
+  <div class="text-big" data-aos="fade-left">
+    <h2>Value</h2>
+    <p>WE HELP YOU CREATE IT.</p>
+  </div>
   <div class="photos-divs pic-4" data-aos="flip-right">
-    <%= image_tag "Tunisia-Skyline.jpg", class: "pic-1" %>
+    <%= image_tag "Tunisia-Skyline.jpg", class: "lg-photos" %>
   </div>
-  <!-- contacts div -->
-<div id="contacts" class="contacts">
-  <ul>
-    <strong>Contacts</strong>
-    <li>Tel: 0208 923 213</li>
-    <li>Mob: 0758 6738382</li>
-    <li>email: contact@bisimpact.com</li>
-  </ul>
-  <ul class="inline">
-    <strong>Address</strong>
-    <li>123 London Road</li>
-    <li>London</li>
-    <li>SW1U 1TE</li>
-    <li>UK</li>
-  </ul>
+  <!-- -------------------contacts div ---------->
+  <div id="contacts" class="contacts">
+    <ul class="inline">
+      <strong>Contacts</strong>
+      <li>Tel: 0208 923 213</li>
+      <li>Mob: 0758 6738382</li>
+      <li>email: contact@bisimpact.com</li>
+    </ul>
+    <ul class="inline">
+      <strong>Address</strong>
+      <li>123 London Road</li>
+      <li>London</li>
+      <li>SW1U 1TE</li>
+      <li>UK</li>
+    </ul>
+  <!-- -------------google map------- -->
     <div class="map-wrapper">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5158.150982926875!2d-0.07869063723315713!3d51.531863980876366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc10335ef69b7113!2sLe%20Wagon%20London!5e0!3m2!1sen!2suk!4v1601233864936!5m2!1sen!2suk" width="400" height="220" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map-widht"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5158.150982926875!2d-0.07869063723315713!3d51.531863980876366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc10335ef69b7113!2sLe%20Wagon%20London!5e0!3m2!1sen!2suk!4v1601233864936!5m2!1sen!2suk" width="400" height="220" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map-width"></iframe>
     </div>
+  </div>
 </div>
+<!-- ------------------------------------ -->
