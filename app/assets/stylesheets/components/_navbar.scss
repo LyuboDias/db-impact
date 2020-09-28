@@ -108,6 +108,13 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .nav-logo {
+    height: 6.7vh;
+    width: 171px;
+    float: left;
+    margin-top: 14px;
+    margin-left: 13px;
+  }
   .menu a {
     border-top: 2px solid $main-color;
     border-bottom: 2px solid $main-color;
@@ -122,6 +129,13 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .nav-logo {
+    height: 6.7vh;
+    width: 171px;
+    float: left;
+    margin-top: 14px;
+    margin-left: 13px;
+  }
   .menu a {
     border-top: 3px solid $main-color;
     border-bottom: 3px solid $main-color;
@@ -131,6 +145,6 @@
     clear: right;
     display: inline-block;
     font-size: 30px;
-  }
+  } 
 }
 // -----------------------------------------------------------------
