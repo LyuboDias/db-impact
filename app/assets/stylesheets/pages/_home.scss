@@ -211,19 +211,14 @@ right: 20px;
     width: 139px;
     float: left;
   }
-  .banner-logo {
-    width: 195px;
-    transform: translateY(-147px);
+  .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #myVideo {
-    position: absolute;
-    transform: translateY(-264px);
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    z-index: -1;
-    height: 50%;
-    object-fit: cover;
+  .banner-logo {
+    width: 240px;
+    
   }
   .text-big {
     padding: 10px;
