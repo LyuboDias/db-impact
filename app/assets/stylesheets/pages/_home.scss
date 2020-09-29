@@ -206,8 +206,24 @@ right: 20px;
 // -------------media query breakpoints-------
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-   .banner-logo {
-    width: 240px;
+  .nav-logo{
+    height: 6.7vh;
+    width: 139px;
+    float: left;
+  }
+  .banner-logo {
+    width: 195px;
+    transform: translateY(-147px);
+  }
+  #myVideo {
+    position: absolute;
+    transform: translateY(-264px);
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: -1;
+    height: 50%;
+    object-fit: cover;
   }
   .text-big {
     padding: 10px;
