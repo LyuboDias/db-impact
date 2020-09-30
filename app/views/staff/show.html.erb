@@ -1,2 +1,22 @@
-<h1>staff member</h1>
-<p> <%= @staff.f_name  %></p>
+<div class="staff-container">
+  <br>
+  <br>
+  <div class="staff-card">
+    <%= image_tag "https://ca.slack-edge.com/T02NE0241-U01687PUT3L-1bdb5f33c064-512" %>
+    <div class="staff-name">
+      <h2 class="main-col"> <%= @staff.f_name %> <%= @staff.l_name %></h2>
+      <p class="main-col"> <%= @staff.job_title %></p>
+    </div>
+  </div>
+  <div class="staff-info ">
+    <div class="staff-contact">
+      <strong class="main-col">Contact <%= @staff.f_name %> </strong>
+      <p class="main-col"> <%= @staff.phone %> </p>
+      <p class="main-col"> <%= @staff.email %> </p>
+    </div>
+    <div class="staff-bio">
+      <p class="main-col"> <%= @staff.bio %>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo illo vitae dolorem veniam, rerum obcaecati placeat accusamus amet quae!</p>
+    </div>
+  </div>
+    <%= link_to 'Back', staff_index_path, class: "home-link" %>
+</div>

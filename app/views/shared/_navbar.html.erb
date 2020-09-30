@@ -1,12 +1,14 @@
 <div class="nav-bar">
+  <%= link_to root_path do %>
   <%= image_tag "logo-transparent1.png", class: "nav-logo" %>
+  <% end %>
   <label for="toggle" class="label-nav">&#9776;</label>
   <input type="checkbox" id="toggle">
   <div class="menu">
     <!-- <span class="x-hamburger">+</span> -->
     <a href="#strategy">Strategy</a>
     <a href="#">Blog</a>
-    <a href="#">Team</a>
+    <%= link_to 'Team', staff_index_path %>
     <a href="#contacts">Contacts</a>
   </div>
 </div>
