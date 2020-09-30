@@ -1,7 +1,23 @@
-<h1>all staff page</h1>
-
-<% @staff.each do |s| %>
-<div class="staff-member">
-  <%=s.f_name  %>
+<div class="container">
+  <br>
+  <br>
+  <h1 class="main-col">Experienced,
+  trusted experts</h1>
+  <br>
+  <h3 class="main-col">Our Team</h3>
+  <br>
+  <% @staff.each do |s| %>
+  <%= link_to staff_path(@staff, :id) do %>
+    <div class="team-box">
+      <%= image_tag "https://ca.slack-edge.com/T02NE0241-U01687PUT3L-1bdb5f33c064-512", class: "team-image" %>
+      <div class="team-name">
+        <p><%= s.f_name %>
+          <%= s.l_name %>
+          <br> <%= s.job_title %>
+        </p>
+      </div>
+    </div>
+    <% end %>
+  <% end %>
+  <%= link_to 'Back', root_path, class: "home-link" %>
 </div>
-<% end %>
