@@ -10,12 +10,12 @@
     padding: 8px;
   }
   ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin: 0 auto;
-}
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 .powered {
@@ -47,7 +47,9 @@
     font-size: 16px;
   }
 }
-
+.trademark {
+  color: $second-color;
+}
 .social {
   position: absolute;
   left: 50%;
@@ -137,14 +139,15 @@
 @media only screen and (max-width: 600px) {
   .powered {
     position: absolute;
-    bottom: 0;
-    left: 40%;
   }
   #authors {
     margin: 30px;
   }
   .social {
     margin-top: 20px;
+  }
+  .trademark {
+    font-size: 8px;
   }
 }
 // -----------------------------------------------------------------
