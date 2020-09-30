@@ -1,15 +1,79 @@
-<div class="nav-bar">
-  <%= link_to root_path do %>
-  <%= image_tag "logo-transparent1.png", class: "nav-logo" %>
-  <% end %>
-  <label for="toggle" class="label-nav">&#9776;</label>
-  <input type="checkbox" id="toggle">
-  <div class="menu">
-    <!-- <span class="x-hamburger">+</span> -->
-    <a href="#strategy">Strategy</a>
-    <a href="#">Blog</a>
-    <%= link_to 'Team', staff_index_path %>
-    <a href="#contacts">Contacts</a>
+<header>
+  <div class="nav-conatiner">
+    <input type="checkbox" name="" id="check">
+    <div class="logo-container">
+      <%= link_to root_path do %>
+      <%= image_tag "logo-transparent1.png", class: "nav-logo" %>
+      <% end %>
+    </div>
+
+    <div class="nav-btn">
+      <div class="navbar-links">
+        <ul>
+          <li class="nav-link" style="--i: .6s">
+            <a href="#">Services<i class="fas fa-caret-down rotate"></i></a>
+            <div class="dropdown">
+              <ul>
+                <li class="arrow"></li>
+                <li class="dropdown-link">
+                  <a href="#">Link 1</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Link 2</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Link 3</a>
+                </li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-link" style="--i: .9s">
+            <a href="#strategy">Strategy</a>
+          </li>
+          <li class="nav-link" style="--i: 1.2s">
+            <a href="#">Blog</a>
+          </li>
+          <li class="nav-link" style="--i: 1.6s">
+            <a href="#">Map<i class="fas fa-caret-down rotate"></i></a>
+             <div class="dropdown">
+              <ul>
+                <li class="arrow"></li>
+                <li class="dropdown-link">
+                  <a href="#">Link 4</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Link 5</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Link 6</a>
+                </li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-link" style="--i: 2s">
+            <%= link_to 'Team', staff_index_path %>
+          </li>
+          <li class="nav-link">
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+    </div>
   </div>
-</div>
+</header>
+
+
+
+
+
+
+
+
 
