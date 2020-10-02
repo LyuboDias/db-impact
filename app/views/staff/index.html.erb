@@ -7,9 +7,10 @@
   <h3 class="main-col">Our Team</h3>
   <br>
   <% @staff.each do |s| %>
-  <%= link_to staff_path(@staff, :id) do %>
+  <%= link_to staff_path(s) do %>
     <div class="team-box">
       <%= image_tag "https://ca.slack-edge.com/T02NE0241-U01687PUT3L-1bdb5f33c064-512", class: "team-image" %>
+      <!--  -->
       <div class="team-name">
         <p><%= s.f_name %>
           <%= s.l_name %>
