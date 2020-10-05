@@ -194,6 +194,15 @@ header {
     transform: translateY(0px);
   }
 }
+@media (max-width: 500px) {
+  .nav-logo {
+    height: 40px;
+    width: 40px;
+    content: url(logo-transparent-smallest.png);
+    
+    
+  }
+}
 @media (max-width: 1180px) {
   .hamburger-menu-container {
     display: flex;
