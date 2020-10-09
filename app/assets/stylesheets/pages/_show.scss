@@ -32,7 +32,7 @@
   width: 100%;
 }
 .staff-image {
-  width: 100%;
+  max-width: 100%;
   border-radius: 5px;
 }
 @media only screen and (max-width: 600px) {
@@ -43,14 +43,61 @@
     flex-direction: column;
   }
 }
-
 .team-bio-header{
-  background-color: #588191;
+  background-color: #066579;
 }
-
 .block {
   position: relative;
 }
+vertical-center-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.medium-5 {
+  width: 41.6666666667%;
+}
+.team-bio-header h2 {
+  text-align: left;
+  margin-top: 0;
+  color: #fff;
+  font-size: 6.5vw;
+  font-family: "adobe-caslon-pro",serif;
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin-bottom: .5rem;
+  line-height: 1.1;
+}
+
+.team-bio-header h5 {
+  margin-top: 1.5rem;
+  text-align: left;
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   .staff-card {
