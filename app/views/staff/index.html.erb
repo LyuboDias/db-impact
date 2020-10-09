@@ -1,24 +1,26 @@
 <div class="container">
   <br>
   <br>
-  <h1 class="main-col">Experienced,
+  <h1 >Experienced,
   trusted experts</h1>
   <br>
   <h3 class="main-col">Our Team</h3>
   <br>
+  <section class="abc">
   <% @staff.each do |s| %>
   <%= link_to staff_path(s) do %>
     <div class="team-box">
       <%= image_tag "https://ca.slack-edge.com/T02NE0241-U01687PUT3L-1bdb5f33c064-512", class: "team-image" %>
       <!--  -->
       <div class="team-name">
-        <p><%= s.f_name %>
-          <%= s.l_name %>
-          <br> <%= s.job_title %>
+        <h2><%= s.f_name %> <%= s.l_name %></h2>
+        <p><%= s.job_title %>
         </p>
       </div>
     </div>
     <% end %>
   <% end %>
+  </section>
   <%= link_to 'Back', root_path, class: "home-link" %>
+
 </div>
