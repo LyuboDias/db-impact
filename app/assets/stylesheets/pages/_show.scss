@@ -35,14 +35,14 @@
   max-width: 100%;
   border-radius: 5px;
 }
-@media only screen and (max-width: 600px) {
-  .staff-card {
-    flex-direction: column;
-  }
-  .staff-info {
-    flex-direction: column;
-  }
+
+.rows {
+  display: flex;
 }
+.staff-job-desc {
+  padding-left: 24px;
+}
+
 .team-bio-header{
   background-color: #066579;
 }
@@ -97,13 +97,12 @@ vertical-center-row {
   font-style: normal;
 }
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   .staff-card {
     flex-direction: column;
   }
-   .staff-info {
+  .staff-info {
     flex-direction: column;
   }
 }
@@ -114,22 +113,30 @@ vertical-center-row {
     flex-direction: column;
   }
   .staff-image {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
-   .staff-info {
+  .staff-info {
     flex-direction: column;
   }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  .staff-card {
-    flex-direction: column;
+  .rows {
+    display: flex;
   }
-  .staff-image {
-    width: 80%;
-    margin: 0 auto;
+  .staff-job-desc {
+    h2 {
+      font-size: 16px;
+    }
   }
 }
-// -----------------------------------------------------------------
 
+/* Large devices (landscape/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .rows {
+    display: flex;
+  }
+  .staff-job-desc {
+    padding-left: 24px;
+  }
+}
+
+// -----------------------------------------------------------------
