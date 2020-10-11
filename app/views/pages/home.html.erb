@@ -13,6 +13,7 @@
   </div>
 
   <!-- ----------------banner --------->
+  
   <div class="banner">
       <%= video_tag "video-banner.MP4", autoplay: :autoplay, loop: :loop, muted: :muted, id: "myVideo", playsinline: true %>
       <%= image_tag "logo-transparent1.png", class: "banner-logo" %>
@@ -26,59 +27,59 @@
   <!-- ---------css grid-------------- -->
 
   <div class="container" data-aos="zoom-in">
-
-    <div class="row mt-5 mb-5 wrap">
+    <div class="row wrap">
       <div class="col-lg-7 col-md-12">
-        <div class="box">
-          <%= image_tag "China-Agriculture.jpg", class: "box-image-long" %>
+        <div class="grid-box-long">
+          <%= image_tag "China-Agriculture.jpg", class: "grid-box-image-long" %>
           <div class="text-inner-box">
-            <p>hello ISTVAN Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit optio dolorum assumenda libero aut placeat.</p>
+            <p>In many countries, agriculture value-chains are a major source of income. With the prevalance of women in the agricultural labour force, by working with agri-business, there is great potential to transform the livelihoods of many.</p>
           </div>
         </div>
-        <div class="box">
-          <%= image_tag "Turkey-Cityscape.jpg", class: "box-image-long" %>
+        <div class="grid-box-long">
+          <%= image_tag "Turkey-Cityscape.jpg", class: "grid-box-image-long" %>
           <div class="text-inner">
-            <p>Lorem ipsum, dolor sit.</p>
+            <p>Trade is central to economic growth. Digital solutions that facilitate new mechanisms for operation are critical in sustaining prosperity. </p>
           </div>
         </div>
       </div>
-      <div class="col-lg-5 col-md-12">
-        <div class="box1">
-      <%= image_tag "banner-img.jpg", class: "box-image" %>
+      <div class="col-lg-5 col-md-9 box-tr-padding">
+        <div class="box-top-right">
+          <%= image_tag "Miyajima-Japan.jpg", class: "box-top-right-image" %>
           <div class="text-inner">
-            <p>Lorem ipsum, dolor sit.</p>
+            <p>Human action is having a devastating impact on our oceans, seas and the wider ecosystem. Behavioural change has to be carefully planned.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row mb-5 wrap">
+    <div class="row">
       <div class="col-lg-3 col-md-12">
-        <div class="box3">
-          <%= cl_image_tag("joajmabi3oh9xgvp1cpc", class: "box-image") %>
+        <div class="grid-bottom">
+          <%= cl_image_tag("joajmabi3oh9xgvp1cpc", class: "grid-bottom-image") %>
           <div class="text-inner">
             <p>Lorem ipsum, dolor sit.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12">
-        <div class="box3">
-          <%= image_tag "China-Mountains.jpg", class: "box-image" %>
+      <div class="col-lg-6 col-md-6">
+        <div class="grid-bottom">
+          <%= image_tag "China-Mountains.jpg", class: "grid-bottom-image" %>
           <div class="text-inner-box3">
-            <p>Lorem ipsum, dolor sit.</p>
+            <p>Though rural-urban migration has increased, preserving anicent ways of living helps retain many of the cultural practices we have come to celebrate. </p>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-12">
-        <div class="box3">
-          <%= image_tag "Kathmandu-Business.jpg", class: "box-image" %>
+      <div class="col-lg-3 col-md-6">
+        <div class="grid-bottom">
+          <%= image_tag "Kathmandu-Business.jpg", class: "grid-bottom-image" %>
           <div class="text-inner">
-            <p>Lorem ipsum, dolor sit.</p>
+            <p>Growing domestic businesses solving localised problems can rapidly create many jobs.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- -----------------strategy----------- -->
   <div id="strategy" class="text-big" data-aos="fade-right">
     <h2>Known as experts at supporting corporate entities and philanthropists to make a social difference.</h2>

@@ -91,27 +91,7 @@ html,body
 .big-text {
   font-size: 7em;
 }
-.box-image-long {
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s ease-in-out;
-  transform: scale(1);
-}
-.box-image {
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s ease-in-out;
-}
-.box1:hover .box-image{
-  transform: scale(1.1);
-}
-.box3:hover .box-image{
-  transform: scale(1.1);
-}
-.box:hover .box-image-long{
-  transform: scale(1.1);
-}
-.box {
+.grid-box-long {
   width: 100%;
   height: 200px;
   margin: 20px auto;
@@ -120,18 +100,40 @@ html,body
   background-position: center;
   position: relative;
 }
-
-.box1 {
+.grid-box-image-long {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+.grid-box-long:hover .grid-box-image-long{
+  transform: scale(1.1);
+}
+.box-top-right {
   background-size: cover;
   background-position: center;
   position: relative;
-  width: 100%;
+  width: 110%;
   height: 420px;
   margin-top: 20px;
   overflow: hidden;
+  padding-right: 50px;
 }
-
-.box3 {
+.box-top-right-image {
+  width: 112%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+.box-top-right:hover .box-top-right-image{
+  transform: scale(1.1);
+  // background-size: contain;
+  // background-repeat: no-repeat;
+}
+.box-tr-padding{
+  margin-bottom: 20px;
+}
+.grid-bottom {
   background-size: cover;
   background-position: center;
   position: relative;
@@ -140,12 +142,21 @@ html,body
   overflow: hidden;
   margin-bottom: 20px;
 }
-
+.grid-bottom-image {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+.grid-bottom:hover .grid-bottom-image{
+  transform: scale(1.1);
+}
 .text-inner {
   background: rgba(100, 162, 205, .8);
   width: 100%;
   text-align: center;
-  padding: 30px;
+  padding-top: 10px;
+  font-size: 16px;
   color: $second-color;
   position: absolute;
   top: 0;
@@ -154,8 +165,9 @@ html,body
 .text-inner-box3 {
   background: rgba(129, 14, 49, .8);
   width: 100%;
+  font-size: 16px;
   text-align: center;
-  padding: 30px;
+  padding-top: 10px;
   color: $second-color;
   position: absolute;
   bottom: 0;
@@ -172,12 +184,12 @@ html,body
   left: 0;
   bottom: 0;
 }
-.box1:hover {
-    background-size: contain;
-    background-repeat: no-repeat;
 
-  }
 
+.wrap{
+  padding: 0; 
+  margin: 0;
+}
 
 // ---------------------contacts div----------------------
 .map-wrapper {
@@ -216,6 +228,10 @@ right: 20px;
   //   width: 139px;
   //   float: left;
   // }
+
+  .grid-box-long {
+    width: 101%;
+  }
   .banner{
     display: flex;
     justify-content: center;
@@ -261,7 +277,7 @@ right: 20px;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-   .banner-logo {
+  .banner-logo {
     width: 300px;
   }
   .text-big {

@@ -217,10 +217,10 @@ header {
     animation: animation .5s ease forwards var(--i);
   }
 
-   .nav-btn {
+  .nav-btn {
     position: fixed;
     height: calc(100vh - 3rem);
-    top: 3rem;
+    top: 4rem;
     left: 0;
     width: 100%;
     background-color: rgba(7,101,121, .8);
