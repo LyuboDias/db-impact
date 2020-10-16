@@ -256,12 +256,16 @@ right: 20px;
   .grid-box-long {
     width: 100%;
   }
+  .box-top-right{
+    height: 334px;
+    margin-top: 0px;
+  }
   .text-inner-box {
     background: rgba(169, 130, 15, .7);
-    width: 39%;
+    width: 45%;
     text-align: center;
     padding: 10px 0px;
-    font-size: 13.5px;
+    font-size: 12px;
     color:  $second-color;
     position: absolute;
     top: 0;
@@ -273,7 +277,7 @@ right: 20px;
     width: 100%;
     text-align: center;
     padding-top: 10px;
-    font-size: 13.5px;
+    font-size: 12px;
     color: $second-color;
     position: absolute;
     top: 0;
@@ -282,7 +286,7 @@ right: 20px;
   .text-inner-box3 {
     background: rgba(129, 14, 49, .7);
     width: 100%;
-    font-size: 13.5px;
+    font-size: 12px;
     text-align: center;
     padding-top: 10px;
     color: $second-color;
