@@ -160,33 +160,44 @@ html,body
   padding-right: 6px;
 }
 .text-inner {
-  background: rgba(23, 139, 221, 0.7);
+  background: rgba(6, 101, 121, 0.8);
   width: 100%;
   text-align: center;
   padding-top: 10px;
-  font-size: 16px;
+  font-size: 16.5px;
   color: $second-color;
   position: absolute;
   top: 0;
   left: 0;
 }
 .text-inner-box3 {
-  background: rgba(129, 14, 49, .7);
+  background: rgba(115, 197, 201, .85);
   width: 100%;
-  font-size: 16px;
+  font-size: 16.5px;
   text-align: center;
   padding-top: 10px;
-  color: $second-color;
+  color: black;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.text-inner-box {
-  background: rgba(169, 130, 15, .7);
+.text-inner-box2 {
+  background: rgba(6, 101, 121, 0.8);
   width: 40%;
   text-align: center;
   padding-top: 10px;
-  color:  $second-color;
+  color: $second-color;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.text-inner-box {
+  background: rgba(115, 197, 201, .85);
+  width: 40%;
+  text-align: center;
+  padding-top: 10px;
+  color:  black;
   position: absolute;
   top: 0;
   left: 0;
@@ -260,39 +271,22 @@ right: 20px;
     height: 334px;
     margin-top: 0px;
   }
-  .text-inner-box {
-    background: rgba(169, 130, 15, .7);
-    width: 45%;
-    text-align: center;
+  .text-inner-box2 {
+    width: 35%;
+    font-size: 13px;
     padding: 10px 0px;
-    font-size: 12px;
-    color:  $second-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+  }
+  }.text-inner-box {
+    width: 35%;
+    padding: 10px 0px;
+    font-size: 13px;
   }
   .text-inner {
-    background: rgba(23, 139, 221, 0.7);
-    width: 100%;
-    text-align: center;
     padding-top: 10px;
-    font-size: 12px;
-    color: $second-color;
-    position: absolute;
-    top: 0;
-    left: 0;
+    font-size: 13px;
   }
   .text-inner-box3 {
-    background: rgba(129, 14, 49, .7);
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-    padding-top: 10px;
-    color: $second-color;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    font-size: 13px;
   }
   .box-long-padding{
     padding-right: 0px;
@@ -323,7 +317,6 @@ right: 20px;
     padding: 20px;
     text-align: center;
   }
-}
 /* LANDSCAPE: Extra small devices (phones, 600px and down) */
 @media only screen and (max-device-height: 420px)
 {
@@ -358,38 +351,20 @@ right: 20px;
     padding-right: 15px;
   } 
   .text-inner-box {
-    background: rgba(169, 130, 15, .7);
     width: 39%;
-    text-align: center;
     padding: 10px 0px;
     font-size: 14.5px;
-    color:  $second-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+  }
+  .text-inner-box2 {
+    width: 39%;
+    padding: 10px 0px;
+    font-size: 14.5px;
   }
   .text-inner {
-    background: rgba(23, 139, 221, 0.7);
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
     font-size: 14.5px;
-    color: $second-color;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
   .text-inner-box3 {
-    background: rgba(129, 14, 49, .7);
-    width: 100%;
     font-size: 14.5px;
-    text-align: center;
-    padding-top: 10px;
-    color: $second-color;
-    position: absolute;
-    bottom: 0;
-    left: 0;
   }
   .back-to-top {
     font-size: 2.9em;
@@ -437,38 +412,19 @@ right: 20px;
     padding-right: 15px;
   }
   .text-inner-box {
-    background: rgba(169, 130, 15, .7);
     width: 50%;
-    text-align: center;
     padding: 10px 0px;
     font-size: 16.5px;
-    color:  $second-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
   }
   .text-inner {
-    background: rgba(23, 139, 221, 0.7);
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
     font-size: 16.5px;
-    color: $second-color;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
   .text-inner-box3 {
-    background: rgba(129, 14, 49, .7);
-    width: 100%;
     font-size: 16.5px;
-    text-align: center;
-    padding-top: 10px;
-    color: $second-color;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  }
+  .text-inner-box2 {
+    padding-top: 20px;
+    font-size: 16.5px;
   }
   .back-to-top {
     font-size: 3.2em;
