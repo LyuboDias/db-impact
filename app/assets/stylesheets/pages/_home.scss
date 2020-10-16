@@ -134,7 +134,7 @@ html,body
 }
 .box-tr-padding{
   margin-bottom: 20px;
-  padding: 0;
+  padding-left: 20px;
 }
 .grid-bottom {
   background-size: cover;
@@ -188,10 +188,9 @@ html,body
   bottom: 0;
 }
 
-
 .wrap{
   padding: 0; 
-  margin: 0;
+  margin: 0 !important; 
 }
 
 // ---------------------contacts div----------------------
@@ -231,9 +230,11 @@ right: 20px;
   //   width: 139px;
   //   float: left;
   // }
-
-  .grid-box-long {
-    width: 101%;
+  .latest-news {
+    width: 7rem;
+  }
+  .marquee {
+    width: calc(100% - 7rem);
   }
   .banner{
     display: flex;
@@ -242,7 +243,6 @@ right: 20px;
   }
   .banner-logo {
     width: 240px;
-
   }
   .text-big {
     padding: 10px;
@@ -252,6 +252,14 @@ right: 20px;
     p {
       font-size: 0.9em;
     }
+  }
+  .grid-box-long {
+    width: 100%;
+  }
+  .box-tr-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
   }
   .back-to-top {
     font-size: 2.6em;
@@ -269,12 +277,6 @@ right: 20px;
     display: block;
     padding: 20px;
     text-align: center;
-  }
-  .latest-news {
-    width: 7rem;
-  }
-  .marquee {
-    width: calc(100% - 7rem);
   }
 }
 
