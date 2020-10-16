@@ -320,8 +320,14 @@ right: 20px;
     text-align: center;
   }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* LANDSCAPE: Extra small devices (phones, 600px and down) */
+@media only screen and (max-device-height: 600px) and (orientation: landscape)
+{
+#myVideo {
+  height: 112vh;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and upto 768px) */
 @media only screen and (min-width: 600px) and (max-width: 768px){
   .banner-logo {
     width: 300px;
