@@ -321,10 +321,10 @@ right: 20px;
   }
 }
 /* LANDSCAPE: Extra small devices (phones, 600px and down) */
-@media only screen and (max-device-height: 600px) and (orientation: landscape)
+@media only screen and (max-device-height: 420px)
 {
 #myVideo {
-  height: 112vh;
+  height: 125vh;
 }
 }
 /* Small devices (portrait tablets and large phones, 600px and upto 768px) */
