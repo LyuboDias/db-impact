@@ -160,7 +160,7 @@ html,body
   padding-right: 6px;
 }
 .text-inner {
-  background: rgba(100, 162, 205, .8);
+  background: rgba(23, 139, 221, 0.7);
   width: 100%;
   text-align: center;
   padding-top: 10px;
@@ -171,7 +171,7 @@ html,body
   left: 0;
 }
 .text-inner-box3 {
-  background: rgba(129, 14, 49, .8);
+  background: rgba(129, 14, 49, .7);
   width: 100%;
   font-size: 16px;
   text-align: center;
@@ -182,11 +182,11 @@ html,body
   left: 0;
 }
 .text-inner-box {
-  background: rgba(169, 130, 15, .8);
-  width: 35%;
+  background: rgba(169, 130, 15, .7);
+  width: 40%;
   text-align: center;
-  padding: 30px;
-  color: $second-color;
+  padding-top: 10px;
+  color:  $second-color;
   position: absolute;
   top: 0;
   left: 0;
@@ -250,11 +250,45 @@ right: 20px;
       font-size: 1.4em;
     }
     p {
-      font-size: 0.9em;
+      font-size: 1em;
     }
   }
   .grid-box-long {
     width: 100%;
+  }
+  .text-inner-box {
+    background: rgba(169, 130, 15, .7);
+    width: 39%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 13.5px;
+    color:  $second-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .text-inner {
+    background: rgba(23, 139, 221, 0.7);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13.5px;
+    color: $second-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .text-inner-box3 {
+    background: rgba(129, 14, 49, .7);
+    width: 100%;
+    font-size: 13.5px;
+    text-align: center;
+    padding-top: 10px;
+    color: $second-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
   .box-long-padding{
     padding-right: 0px;
@@ -312,6 +346,40 @@ right: 20px;
   }
   .grid-bottom-padding {
     padding-right: 15px;
+  } 
+  .text-inner-box {
+    background: rgba(169, 130, 15, .7);
+    width: 39%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 14.5px;
+    color:  $second-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .text-inner {
+    background: rgba(23, 139, 221, 0.7);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14.5px;
+    color: $second-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .text-inner-box3 {
+    background: rgba(129, 14, 49, .7);
+    width: 100%;
+    font-size: 14.5px;
+    text-align: center;
+    padding-top: 10px;
+    color: $second-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
   .back-to-top {
     font-size: 2.9em;
@@ -358,6 +426,40 @@ right: 20px;
   .grid-bottom-padding {
     padding-right: 15px;
   }
+  .text-inner-box {
+    background: rgba(169, 130, 15, .7);
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 16.5px;
+    color:  $second-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .text-inner {
+    background: rgba(23, 139, 221, 0.7);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16.5px;
+    color: $second-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .text-inner-box3 {
+    background: rgba(129, 14, 49, .7);
+    width: 100%;
+    font-size: 16.5px;
+    text-align: center;
+    padding-top: 10px;
+    color: $second-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
   .back-to-top {
     font-size: 3.2em;
   }
@@ -392,6 +494,9 @@ right: 20px;
   .box-long-padding{
     padding-right: 22px;
     padding-left: 0px;
+  }
+  .grid-bottom-padding {
+    padding-right: 7px;
   }
   .back-to-top {
     font-size: 3.5em;
