@@ -110,7 +110,8 @@ html,body
   transform: scale(1.1);
 }
 .box-long-padding{
-  padding: 0;
+  padding-right: 22px;
+  padding-left: 0px;
 }
 .box-top-right {
   background-size: cover;
@@ -134,7 +135,8 @@ html,body
 }
 .box-tr-padding{
   margin-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 22px;
+  padding-right: 0px;
 }
 .grid-bottom {
   background-size: cover;
@@ -153,6 +155,9 @@ html,body
 }
 .grid-bottom:hover .grid-bottom-image{
   transform: scale(1.1);
+}
+.grid-bottom-padding {
+  padding-right: 6px;
 }
 .text-inner {
   background: rgba(100, 162, 205, .8);
@@ -225,13 +230,8 @@ right: 20px;
 // -------------media query breakpoints-------
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  // .nav-logo{
-  //   height: 6.7vh;
-  //   width: 139px;
-  //   float: left;
-  // }
   .latest-news {
-    width: 7rem;
+  width: 7rem;
   }
   .marquee {
     width: calc(100% - 7rem);
@@ -256,10 +256,17 @@ right: 20px;
   .grid-box-long {
     width: 100%;
   }
+  .box-long-padding{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
   .box-tr-padding{
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
+  }
+  .grid-bottom-padding {
+    padding-right: 15px;
   }
   .back-to-top {
     font-size: 2.6em;
@@ -281,7 +288,7 @@ right: 20px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768px){
   .banner-logo {
     width: 300px;
   }
@@ -293,6 +300,18 @@ right: 20px;
     p {
       font-size: 1.2em;
     }
+  }
+  .box-tr-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+  .box-long-padding{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .grid-bottom-padding {
+    padding-right: 15px;
   }
   .back-to-top {
     font-size: 2.9em;
@@ -327,6 +346,18 @@ right: 20px;
       font-size: 1.5em;
     }
   }
+  .box-long-padding{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .box-tr-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+  .grid-bottom-padding {
+    padding-right: 15px;
+  }
   .back-to-top {
     font-size: 3.2em;
   }
@@ -357,6 +388,10 @@ right: 20px;
   }
   .text-big {
     padding: 80px;
+  }
+  .box-long-padding{
+    padding-right: 22px;
+    padding-left: 0px;
   }
   .back-to-top {
     font-size: 3.5em;
