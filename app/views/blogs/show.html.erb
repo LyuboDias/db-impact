@@ -1,0 +1,12 @@
+<div class="text-center blog-big">
+  <br>
+  <br>
+  <h1> <%= @blog.header %></h1>
+  <br>
+  <h3> <%= @blog.sub_header %></h3>
+  <br>
+  <p><%= @blog.content %> </p>
+  <p>Author - <%= @blog.author %> <br> <%= @blog.author_info %></p>
+  <p><%= @blog.hashtags %> </p>
+</div>
+  <%= link_to 'Back', blogs_path, class: "home-link" %>

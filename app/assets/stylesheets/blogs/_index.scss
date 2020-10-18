@@ -1,0 +1,27 @@
+.blog-big {
+  color: rgb(7,101,121);
+}
+.outer {
+ height: 100%;
+ display: flex;
+}
+.sub-blog {
+  width: 40%;
+  // background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("China-Boats.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
+}
+.blog-content {
+  width: 60%;
+}
