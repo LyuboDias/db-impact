@@ -58,6 +58,14 @@
   border-top-width: 0;
   border-right-width: 0;
 }
+.staff-image img{
+  // object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+
 .team-name {
   background: rgba(129, 14, 49, 0.5);
   width: 100%;

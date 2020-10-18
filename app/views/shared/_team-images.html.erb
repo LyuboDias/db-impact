@@ -1,8 +1,11 @@
 <% @staff.each do |s| %>
   <%= link_to staff_path(s) do %>
     <div class="team-box">
-      <%= image_tag "https://ca.slack-edge.com/T02NE0241-U01687PUT3L-1bdb5f33c064-512", class: "team-image" %>
+      <%#= image_tag "https://ca.slack-edge.com/T02NE0241-U01687PUT3L-1bdb5f33c064-512", class: "team-image" %>
       <!--  -->
+      <div class='staff-image'>
+        <%= cl_image_tag s.image.key %>
+      </div>
       <div class="team-name">
         <h2><%= s.f_name %> <%= s.l_name %></h2>
         <p><%= s.job_title %>
