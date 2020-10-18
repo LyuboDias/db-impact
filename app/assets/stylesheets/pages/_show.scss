@@ -38,6 +38,9 @@
 
 .rows {
   display: flex;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .staff-job-desc {
   padding-left: 24px;
@@ -48,6 +51,7 @@
 }
 .block {
   position: relative;
+  border-radius: 5px;
 }
 vertical-center-row {
   display: -webkit-box;
@@ -70,6 +74,9 @@ vertical-center-row {
 }
 .medium-5 {
   width: 41.6666666667%;
+  @media only screen and (max-width: 768px) {
+    margin: 20px auto;
+  }
 }
 .team-bio-header h2 {
   text-align: left;
@@ -85,27 +92,18 @@ vertical-center-row {
 }
 
 .team-bio-header h5 {
-  margin-top: 1.5rem;
   text-align: left;
   margin-top: 0;
   color: #fff;
-  font-size: 1.7rem;
+  // font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-  .staff-card {
-    flex-direction: column;
-  }
-  .staff-info {
-    flex-direction: column;
-  }
-}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -119,13 +117,9 @@ vertical-center-row {
   .staff-info {
     flex-direction: column;
   }
-  .rows {
-    display: flex;
-  }
+
   .staff-job-desc {
-    h2 {
-      font-size: 16px;
-    }
+    padding-left: 14px;
   }
 }
 
@@ -133,9 +127,6 @@ vertical-center-row {
 @media only screen and (max-width: 992px) {
   .rows {
     display: flex;
-  }
-  .staff-job-desc {
-    padding-left: 24px;
   }
 }
 

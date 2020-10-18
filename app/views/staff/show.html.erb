@@ -1,7 +1,7 @@
 <div class="staff-container">
   <br>
   <br>
-  <div class="block team-bio-header content dark">
+  <div class="block team-bio-header content dark p-3">
     <div class="rows vertical-center-row">
       <div class="medium-5 columns">
         <%= cl_image_tag @staff.image.key, class: "staff-image" %>
@@ -15,7 +15,7 @@
   </div>
 
 
-  
+
   <div class="staff-info ">
     <div class="staff-contact">
       <strong class="main-col">Contact <%= @staff.f_name %> </strong>
@@ -23,7 +23,7 @@
       <p class="main-col"> <%= @staff.email %> </p>
     </div>
     <div class="staff-bio">
-      <p class="main-col"> <%= @staff.bio %>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo illo vitae dolorem veniam, rerum obcaecati placeat accusamus amet quae!</p>
+      <p class="main-col"> <%= @staff.bio %></p>
     </div>
   </div>
     <%= link_to 'Back', staff_index_path, class: "home-link" %>
