@@ -3,4 +3,16 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def videos
+  end
+
+  def design
+  end
+
+  def sustainability
+  end
+
+  def transformation
+  end
 end

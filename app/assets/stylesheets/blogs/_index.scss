@@ -1,0 +1,57 @@
+.blog-big {
+  color: rgb(7,101,121);
+}
+.outer {
+ height: 300px;
+ display: flex;
+ padding: 20px;
+}
+.sub-blog {
+  width: 40%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("China-Boats.jpg");
+  // height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.blog-content {
+  width: 60%;
+  height: 280px;
+  padding: 0 20px!important;
+}
+@media only screen and (max-width: 815px) {
+  .outer {
+    height: 100%!important;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .blog-content {
+    width: 90%;
+    margin: 20px auto;
+    height: 100%
+  }
+  .sub-blog {
+    width: 90%;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .outer {
+    height: 350px;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}

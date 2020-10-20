@@ -16,46 +16,32 @@
               <ul>
                 <li class="arrow"></li>
                 <li class="dropdown-link">
-                  <a href="#">Link 1</a>
+                  <%= link_to "Design", design_path %>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#">Link 2</a>
+                  <%= link_to "Sustainability", sustainability_path %>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#">Link 3</a>
+                  <%= link_to "Transformation", transformation_path %>
                 </li>
 
               </ul>
             </div>
           </li>
           <li class="nav-link" style="--i: .9s">
-            <a href="#strategy">What We Do</a>
+            <a href="http://www.bisimpact.com#strategy">What We Do</a>
           </li>
           <li class="nav-link" style="--i: 1.4s">
             <%= link_to 'Our Team', staff_index_path %>
           </li>
           <li class="nav-link" style="--i: 1.8s">
-            <a href="#">Blog</a>
+            <%= link_to 'Blog', blogs_path %>
           </li>
           <li class="nav-link" style="--i: 2.2s">
-            <a href="#">Map<i class="fas fa-caret-down rotate"></i></a>
-            <div class="dropdown">
-              <ul>
-                <li class="arrow"></li>
-                <li class="dropdown-link">
-                  <a href="#">Link 4</a>
-                </li>
-                <li class="dropdown-link">
-                  <a href="#">Link 5</a>
-                </li>
-                <li class="dropdown-link">
-                  <a href="#">Link 6</a>
-                </li>
-              </ul>
-            </div>
+            <%= link_to "Videos", videos_path %>
           </li>
           <li class="nav-link" style="--i: 2.6s">
-            <a href="#contacts">Contact Us</a>
+            <a href="http://www.bisimpact.com#contacts">Contact Us</a>
           </li>
         </ul>
       </div>

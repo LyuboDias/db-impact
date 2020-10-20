@@ -12,12 +12,12 @@ Staff.destroy_all
 puts 'Database cleaned.'
 puts 'Creating new staff member.'
 
-lu = Staff.new({ 
-  f_name: 'Lyubomir', 
-  l_name: 'Dias', 
-  job_title: 'Software Engineer/Tech Lead', 
-  bio: 'Ensured high availability of the Asset Arena Transfer Agency product via coordinated team work between domestic & offshore resources. Provide technical support to team members and members of other departments integral to the successful completion of modules.', 
-  email: 'lyubomirdias@gmail.com', 
+lu = Staff.new({
+  f_name: 'Lyubomir',
+  l_name: 'Dias',
+  job_title: 'Software Engineer/Tech Lead',
+  bio: 'Ensured high availability of the Asset Arena Transfer Agency product via coordinated team work between domestic & offshore resources. Provide technical support to team members and members of other departments integral to the successful completion of modules.',
+  email: 'lyubomirdias@gmail.com',
   phone: '0757635246'
 })
 lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1603018872/Nigella_Lawson_2_xzjnzr.jpg")
@@ -25,25 +25,61 @@ lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
 lu.save!
 
 deep = Staff.new({
-  f_name: 'Deep', 
-  l_name: 'Biswas', 
-  job_title: 'CEO', 
+  f_name: 'Deep',
+  l_name: 'Biswas',
+  job_title: 'CEO',
   bio: 'Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.
 
   He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.
 
   He has worked on topics such as International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.
 
-  He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.', 
-  email: 'deepbiswas@hotmail.com', 
+  He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.',
+  email: 'deepbiswas@hotmail.com',
   phone: '0783635246'
 })
 deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1598125079/tq6rsvgiyh5m3cpc99ui6o2dyh4h.jpg")
 deep.image.attach(io: deep_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
 deep.save!
 
-# lu = Staff.create(f_name: 'Random', l_name: 'Person', job_title: 'Software Engineer/Tech Lead', bio: 'Ensured high availability of the Asset Arena Transfer Agency product via coordinated team work between domestic & offshore resources. Provide technical support to team members and members of other departments integral to the successful completion of modules.', email: 'randomp@gmail.com', phone: '0757632836')
-
-# lu = Staff.create(f_name: 'Bob', l_name: 'Sponge', job_title: 'Software Engineer/Tech Lead', bio: 'Ensured high availability of the Asset Arena Transfer Agency product via coordinated team work between domestic & offshore resources. Provide technical support to team members and members of other departments integral to the successful completion of modules.', email: 'spongebob@gmail.com', phone: '0757635246')
 
 puts "seeding is finished"
+
+blog1 = Blog.new({
+  header: 'This is a new blog',
+  sub_header: 'its about social impact blog',
+  content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, distinctio, officia beatae qui aspernatur voluptatibus libero rerum et voluptate, necessitatibus vitae sunt ipsam reprehenderit tempore, possimus. Saepe quae sint repellendus labore esse similique corporis, a perferendis. Necessitatibus totam voluptatum neque, nihil enim ab unde sint repudiandae veritatis explicabo sit, quae culpa libero tempora excepturi maiores rerum consectetur amet suscipit atque laboriosam quisquam deserunt ut omnis. Repellendus rerum corrupti dolorum itaque doloribus qui excepturi voluptas eveniet esse harum, ducimus cum dignissimos, aperiam et error necessitatibus nam assumenda, porro modi obcaecati ipsam aliquid. Incidunt, officia magnam cum neque laboriosam sunt nesciunt. Pariatur repellendus vel aspernatur dolores maxime nesciunt dolore, quisquam quaerat voluptates ratione culpa sequi harum necessitatibus illum in doloremque expedita alias laboriosam perspiciatis! Perferendis possimus eum cupiditate earum natus dolore necessitatibus assumenda nostrum quam. Corporis exercitationem, optio culpa nam, saepe repellat quasi recusandae ad delectus pariatur praesentium autem natus, esse adipisci.',
+  author: 'Deep Biswas',
+  author_info: 'Specialist in social impact with over 10 years experiance.',
+  hashtags: 'Social Impact / Blog / Testing'
+})
+blog1.save!
+
+blog2 = Blog.new({
+  header: 'This is a new blog number 2',
+  sub_header: 'its about testing if all works well',
+  content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, distinctio, officia beatae qui aspernatur voluptatibus libero rerum et voluptate, necessitatibus vitae sunt ipsam reprehenderit tempore, possimus. Saepe quae sint repellendus labore esse similique corporis, a perferendis. Necessitatibus totam voluptatum neque, nihil enim ab unde sint repudiandae veritatis explicabo sit, quae culpa libero tempora excepturi maiores rerum consectetur amet suscipit atque laboriosam quisquam deserunt ut omnis. Repellendus rerum corrupti dolorum itaque doloribus qui excepturi voluptas eveniet esse harum, ducimus cum dignissimos, aperiam et error necessitatibus nam assumenda, porro modi obcaecati ipsam aliquid. Incidunt, officia magnam cum neque laboriosam sunt nesciunt. Pariatur repellendus vel aspernatur dolores maxime nesciunt dolore, quisquam quaerat voluptates ratione culpa sequi harum necessitatibus illum in doloremque expedita alias laboriosam perspiciatis! Perferendis possimus eum cupiditate earum natus dolore necessitatibus assumenda nostrum quam. Corporis exercitationem, optio culpa nam, saepe repellat quasi recusandae ad delectus pariatur praesentium autem natus, esse adipisci.',
+  author: 'Deep Biswas / Lyubomir Dias',
+  author_info: 'Specialist in social impact with over 10 years experiance.',
+  hashtags: 'Social Impact / Blog / Testing'
+})
+blog2.save!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

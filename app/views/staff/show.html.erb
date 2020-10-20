@@ -1,21 +1,21 @@
 <div class="staff-container">
   <br>
   <br>
-  <div class="block team-bio-header content dark">
+  <div class="block team-bio-header content dark ">
     <div class="rows vertical-center-row">
       <div class="medium-5 columns">
         <%= cl_image_tag @staff.image.key, class: "staff-image" %>
       </div>
-      <div class="medium-7 columns staff-job-desc">
+      <div class="medium-7 columns staff-job-desc ">
         <h2 class="main-col"> <%= @staff.f_name %> <br> <%= @staff.l_name %></h2>
-        <h5 class="main-col"> <%= @staff.job_title %></h5>
+        <h5 > <%= @staff.job_title %></h5>
         <h4> Something ought to fill this space, let's try it out </h4>
       </div>
     </div>
   </div>
 
 
-  
+
   <div class="staff-info ">
     <div class="staff-contact">
       <strong class="main-col">Contact <%= @staff.f_name %> </strong>
@@ -23,8 +23,8 @@
       <p class="main-col"> <%= @staff.email %> </p>
     </div>
     <div class="staff-bio">
-      <p class="main-col"> <%= @staff.bio %>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo illo vitae dolorem veniam, rerum obcaecati placeat accusamus amet quae!</p>
+      <p class="main-col"> <%= @staff.bio %></p>
     </div>
   </div>
-    <%= link_to 'Back', staff_index_path, class: "home-link" %>
+    <%= link_to 'Back', staff_index_path, class: "home-link text-center" %>
 </div>

@@ -36,11 +36,9 @@
   border-radius: 5px;
 }
 
-.rows {
-  display: flex;
-}
+
 .staff-job-desc {
-  padding-left: 24px;
+  padding: 0 24px;
 }
 
 .team-bio-header{
@@ -48,8 +46,9 @@
 }
 .block {
   position: relative;
+  border-radius: 5px;
 }
-vertical-center-row {
+.vertical-center-row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,13 +63,11 @@ vertical-center-row {
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
+  -webkit-justify-content: space-between;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.medium-5 {
-  width: 41.6666666667%;
-}
+
 .team-bio-header h2 {
   text-align: left;
   margin-top: 0;
@@ -85,46 +82,57 @@ vertical-center-row {
 }
 
 .team-bio-header h5 {
-  margin-top: 1.5rem;
   text-align: left;
   margin-top: 0;
   color: #fff;
-  font-size: 1.7rem;
+  // font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-  .staff-card {
+
+@media only screen and (max-width: 460px) {
+  .vertical-center-row {
     flex-direction: column;
   }
-  .staff-info {
-    flex-direction: column;
+}
+
+@media only screen and (max-width: 520px) {
+
+  .staff-job-desc {
+    h2 {
+      font-size: 16px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    h4 {
+      display: none;
+    }
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
   .staff-card {
     flex-direction: column;
-  }
-  .staff-image {
-    width: 100%;
-    margin: 0 auto;
   }
   .staff-info {
     flex-direction: column;
   }
-  .rows {
-    display: flex;
-  }
+
   .staff-job-desc {
     h2 {
-      font-size: 16px;
+      font-size: 30px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 18px;
     }
   }
 }
@@ -133,9 +141,6 @@ vertical-center-row {
 @media only screen and (max-width: 992px) {
   .rows {
     display: flex;
-  }
-  .staff-job-desc {
-    padding-left: 24px;
   }
 }
 
