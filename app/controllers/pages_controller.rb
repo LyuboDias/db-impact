@@ -6,4 +6,13 @@ class PagesController < ApplicationController
 
   def videos
   end
+
+  def design
+  end
+
+  def sustainability
+  end
+
+  def transformation
+  end
 end

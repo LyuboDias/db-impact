@@ -1,26 +1,33 @@
-<div class="text-center blog-big">
+<div class="text-center blog-big ">
   <br>
   <br>
-  <h1>All blogs here</h1>
-  <br>
-  <h3 class="main-col">Short and snackable insights on talent management, organizational design, agility, culture, change management, HR analytics and technology, leadership, and merger management from our experienced partners at the forefront of today’s trends.</h3>
+  <div class="container">
+    <h1>All blogs here</h1>
+    <br>
+    <h3 class="main-col">Short and snackable insights on talent management, organizational design, agility, culture, change management, HR analytics and technology, leadership, and merger management from our experienced partners at the forefront of today’s trends.</h3>
+  </div>
   <br>
   <div>
-
+  <br>
   <% @blog.each do |b| %>
-    <div class="outer mb-5 mt-5">
+    <div class="outer ">
       <div class="sub-blog">
         <h3><%= b.sub_header %></h3>
       </div>
       <div class="blog-content p-3">
         <h1><%=  b.header %> </h1>
-        <p><%= b.content %> </p>
+        <p><%= b.content.truncate(200) %> </p>
         <p>Author -<%= b.author %> <br> <%= b.author_info %> </p>
         <p><%= b.hashtags %> </p>
+
         <%= link_to 'Read more', blog_path(b) %>
       </div>
     </div>
+
+  <br>
+  <br>
   <% end %>
   </div>
+
 </div>
-  <%= link_to 'Back', root_path, class: "home-link" %>
+<%= link_to 'Back', root_path, class: "home-link text-center" %>
