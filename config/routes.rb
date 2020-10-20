@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :staff, only: [:index, :show, :new, :create]
   resources :blogs, only: [:index, :show, :new, :create]
   get '/videos' => 'pages#videos'
+  get '/design' => 'pages#design'
+  get '/sustainability' => 'pages#sustainability'
+  get '/transformation' => 'pages#transformation'
 end

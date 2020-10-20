@@ -36,14 +36,9 @@
   border-radius: 5px;
 }
 
-.rows {
-  display: flex;
-  @media only screen and (max-width: 768px) {
-    // flex-direction: column;
-  }
-}
+
 .staff-job-desc {
-  padding-left: 24px;
+  padding: 0 24px;
 }
 
 .team-bio-header{
@@ -53,7 +48,7 @@
   position: relative;
   border-radius: 5px;
 }
-vertical-center-row {
+.vertical-center-row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -68,16 +63,11 @@ vertical-center-row {
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
+  -webkit-justify-content: space-between;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.medium-5 {
-  width: 41.6666666667%;
-  @media only screen and (max-width: 768px) {
-    margin: 20px auto;
-  }
-}
+
 .team-bio-header h2 {
   text-align: left;
   margin-top: 0;
@@ -104,22 +94,46 @@ vertical-center-row {
 }
 
 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .staff-card {
+@media only screen and (max-width: 460px) {
+  .vertical-center-row {
     flex-direction: column;
   }
-  .staff-image {
-    width: 100%;
-    margin: 0 auto;
+}
+
+@media only screen and (max-width: 520px) {
+
+  .staff-job-desc {
+    h2 {
+      font-size: 16px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    h4 {
+      display: none;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 780px) {
+  .staff-card {
+    flex-direction: column;
   }
   .staff-info {
     flex-direction: column;
   }
 
   .staff-job-desc {
-    padding-left: 14px;
+    h2 {
+      font-size: 30px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 18px;
+    }
   }
 }
 
