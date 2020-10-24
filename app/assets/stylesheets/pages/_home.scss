@@ -51,10 +51,11 @@ html,body
   position: absolute;
   right: 0;
   top: 0;
-  width: 100%;
+  min-width: 100%;
   z-index: -1;
   height: 100vh;
   object-fit: cover;
+  background-color: black;;
 }
 
 .banner {
