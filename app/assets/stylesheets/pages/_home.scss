@@ -385,7 +385,12 @@ right: 20px;
     text-align: center;
   }
 }
-
+/* Medium devices (portrait-mode tablets, 768px and up) */
+@media screen and (min-width: 768px) and (orientation: portrait){
+  .banner {
+    height: 91vh;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   body {
@@ -450,6 +455,12 @@ right: 20px;
   }
 }
 
+/* Large devices (laptops/desktops - portrait mode, 992px and up) */
+@media screen and (min-width: 992px) and (orientation: portrait) {
+  .banner {
+    height: 94vh;
+  }
+} 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   body {
