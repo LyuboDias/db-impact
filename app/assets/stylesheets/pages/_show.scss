@@ -32,7 +32,10 @@
   width: 100%;
 }
 .staff-image {
-  max-width: 100%;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
 

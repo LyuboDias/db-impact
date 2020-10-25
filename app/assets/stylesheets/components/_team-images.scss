@@ -59,12 +59,13 @@
   border-right-width: 0;
 }
 .staff-image img{
-  // object-fit: cover;
-  height: 100%;
+  background-position: center;
+  max-height: 420px;
+  transform: translate(0px, 10px) scale(1.1);
+  display: block;
+  object-fit: cover;
   width: 20;
 }
-
-
 
 .team-name {
   background: rgba(129, 14, 49, 0.5);

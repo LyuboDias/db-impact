@@ -12,18 +12,6 @@ Staff.destroy_all
 puts 'Database cleaned.'
 puts 'Creating new staff member.'
 
-lu = Staff.new({
-  f_name: 'Lyubomir',
-  l_name: 'Dias',
-  job_title: 'Software Engineer/Tech Lead',
-  bio: 'Ensured high availability of the Asset Arena Transfer Agency product via coordinated team work between domestic & offshore resources. Provide technical support to team members and members of other departments integral to the successful completion of modules.',
-  email: 'lyubomirdias@gmail.com',
-  phone: '0757635246'
-})
-lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1603018872/Nigella_Lawson_2_xzjnzr.jpg")
-lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
-lu.save!
-
 deep = Staff.new({
   f_name: 'Deep',
   l_name: 'Biswas',
@@ -42,6 +30,17 @@ deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v16034176
 deep.image.attach(io: deep_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
 deep.save!
 
+lu = Staff.new({
+  f_name: 'Lyubomir',
+  l_name: 'Dias',
+  job_title: 'Software Engineer/Tech Lead',
+  bio: 'Ensured high availability of the Asset Arena Transfer Agency product via coordinated team work between domestic & offshore resources. Provide technical support to team members and members of other departments integral to the successful completion of modules.',
+  email: 'lyubomirdias@gmail.com',
+  phone: '0757635246'
+})
+lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1603597781/Lyubomir_Dias_2_qxfiko.jpg")
+lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
+lu.save!
 
 puts "seeding is finished"
 

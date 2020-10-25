@@ -5,7 +5,8 @@
   width: 100%;
   background: $main-color;
   position: relative;
-
+  margin-top: auto;
+  
   @media (max-width: 540px) {
     padding: 8px;
   }

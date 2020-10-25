@@ -5,6 +5,9 @@ html,body
   padding: 0px;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 // --------------scrolling text-----------------
 .text-wrap {
