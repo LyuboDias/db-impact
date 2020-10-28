@@ -38,7 +38,7 @@ lu = Staff.new({
   email: 'lyubomirdias@gmail.com',
   phone: '0757635246'
 })
-lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1603597781/Lyubomir_Dias_2_qxfiko.jpg")
+lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1603849114/Lu_Dias_2_pwpjlv.jpg")
 lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
 lu.save!
 
