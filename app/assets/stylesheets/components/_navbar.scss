@@ -1,3 +1,6 @@
+.white {
+  color: white;
+}
 .nav-logo {
   height: 56px;
   width: 156px;
@@ -201,7 +204,7 @@ header {
     width: 40px;
     content: url(https://res.cloudinary.com/dhoxwyrvn/image/upload/v1601939591/logo-transparent-smallest_c0l4x5.png);
     // content: url(logo-transparent-smallest.png);
-    
+
   }
 }
 @media (max-width: 1180px) {
@@ -244,7 +247,7 @@ header {
     }
   }
   .nav-link {
-    width: 100%;  
+    width: 100%;
     opacity: 0;
     transform: translateY(15px);
     a {
@@ -281,7 +284,7 @@ header {
   }
 
   .dropdown-link a {
-    background-color: red;
+    background-color: rgb(115,197,201);
     color: $second-color;
     padding: 1.2rem 2rem;
   }
