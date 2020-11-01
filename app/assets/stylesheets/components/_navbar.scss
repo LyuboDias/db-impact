@@ -70,7 +70,7 @@ header {
   top: 100%;
   left: -35px;
   width: 10rem;
-  transition: .5s;
+  transition: .4s;
   opacity: 0;
   pointer-events: none;
 }
@@ -91,18 +91,16 @@ header {
   transition: .3s;
   &:hover {
     color: $second-color;
-    background-color: $main-color;
+    background-color: rgba(115, 197, 201, 1);
+    color: black;
     transform: scale(1);
   }
-}
-.dropdown-link {
-  position: relative;
 }
 .arrow {
   position: absolute;
   width: 11px;
   height: 11px;
-  left: 95px;
+  left: 94px;
   top: -5.5px;
   background-color: $second-color;
   transform: rotate(45deg);
@@ -110,8 +108,11 @@ header {
   transition: .3s;
   z-index: -1;
 }
-.dropdown-link:first-child:hover ~ .arrow {
-  background-color: $main-color;
+.dropdown-link:hover ~.arrow{
+  background-color: rgba(115, 197, 201, .85);
+}
+.dropdown-link {
+  position: relative;
 }
 .nav-link:hover > .dropdown, .dropdown-link:hover > .dropdown {
   transform: translate(0, 0);
@@ -201,7 +202,6 @@ header {
     content: url(https://res.cloudinary.com/dhoxwyrvn/image/upload/v1601939591/logo-transparent-smallest_c0l4x5.png);
     // content: url(logo-transparent-smallest.png);
     
-    
   }
 }
 @media (max-width: 1180px) {
@@ -244,7 +244,7 @@ header {
     }
   }
   .nav-link {
-    width: 100%;
+    width: 100%;  
     opacity: 0;
     transform: translateY(15px);
     a {
@@ -253,9 +253,15 @@ header {
     }
   }
 
-  .nav-link:hover a {
+  .nav-link a {
     transform: scale(1);
-    background-color: rgb(37,130,151);
+    background-color: transparent;
+    &:hover {
+      color: $second-color;
+      background-color: rgba(115, 197, 201, 1);
+      color: $main-color;
+
+    }
   }
 
   .dropdown {
@@ -275,7 +281,7 @@ header {
   }
 
   .dropdown-link a {
-    background-color: transparent;
+    background-color: red;
     color: $second-color;
     padding: 1.2rem 2rem;
   }
