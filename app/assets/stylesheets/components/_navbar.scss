@@ -204,14 +204,12 @@ header {
     width: 40px;
     content: url(https://res.cloudinary.com/dhoxwyrvn/image/upload/v1601939591/logo-transparent-smallest_c0l4x5.png);
     // content: url(logo-transparent-smallest.png);
-
   }
 }
 @media (max-width: 1180px) {
   .hamburger-menu-container {
     display: flex;
   }
-
   #check {
     display: block;
   }
@@ -283,8 +281,7 @@ header {
 
   .dropdown-link a {
     background-color: $second-color;
-    color: $main-color;
-    
+    color: $main-color;  
     &:hover {
       color: $second-color;
       background-color: rgba(115, 197, 201, 0.85);
