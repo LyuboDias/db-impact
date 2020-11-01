@@ -62,7 +62,7 @@ header {
   transition: .5s;
   text-decoration: none;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
   i {
     margin-left: .2rem;
@@ -260,10 +260,8 @@ header {
     transform: scale(1);
     background-color: transparent;
     &:hover {
-      color: $second-color;
-      background-color: rgba(115, 197, 201, 1);
-      color: $main-color;
-
+      background-color: rgba(115, 197, 201, 0.85);
+      color: black;
     }
   }
 
@@ -284,9 +282,14 @@ header {
   }
 
   .dropdown-link a {
-    background-color: rgb(115,197,201);
-    color: $second-color;
-    padding: 1.2rem 2rem;
+    background-color: $second-color;
+    color: $main-color;
+    
+    &:hover {
+      color: $second-color;
+      background-color: rgba(115, 197, 201, 0.85);
+      color: black;
+    }
   }
 
   .dropdown-link:not(:nth-child(1)) {
