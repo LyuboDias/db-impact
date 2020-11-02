@@ -350,7 +350,10 @@ right: 20px;
     }
   }
   .grid-box-long{
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+  }
+  .grid-bottom{
+    margin-top: 20px;
   }
   .box-tr-padding {
     padding-left: 0px;
@@ -400,6 +403,9 @@ right: 20px;
   .banner {
     height: 91vh;
   }
+  .grid-bottom{
+    margin-top: 20px;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -417,6 +423,9 @@ right: 20px;
     p {
       font-size: 1.5em;
     }
+  }
+  .grid-bottom {
+    margin-top: 20px;
   }
   .box-long-padding{
     padding-right: 0px;
@@ -482,6 +491,9 @@ right: 20px;
   }
   .text-big {
     padding: 60px;
+  }
+  .grid-bottom{
+    margin-top: 0px;
   }
   .box-long-padding{
     padding-right: 22px;
