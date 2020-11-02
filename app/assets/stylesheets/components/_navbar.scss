@@ -290,7 +290,7 @@ header {
   }
 
   .dropdown-link:not(:nth-child(1)) {
-    border-top: none;
+    border-top: 1px solid $main-color;
   }
 
   .nav-link:hover > .dropdown,
