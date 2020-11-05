@@ -527,14 +527,15 @@ right: 20px;
       }
   }
 }
-/*Internet Explorer specific-cide */
+/*Internet Explorer specific-size */
 @media all and (-ms-high-contrast: none),(-ms-high-contrast: active) {
   #myVideo {
-    height: 110vh;
+    height: 116vh;
   }
   .banner {
-    height: 89vh;
+    height: 97vh;
   }
 }
+
 // -----------------------------------------------------------------
 
