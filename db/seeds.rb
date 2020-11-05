@@ -16,11 +16,11 @@ deep = Staff.new({
   f_name: 'Deep',
   l_name: 'Biswas',
   job_title: 'CEO',
-  bio: 'Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.
+  bio: 'Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.\n
   
-  He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.
+  He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.\n
   
-  He has worked on topics such as International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.
+  He has worked on topics such as International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.\n
 
   He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.',
   email: 'deepbiswas@hotmail.com',

@@ -244,6 +244,7 @@ position: fixed;
 bottom: 10px;
 right: 20px;
 }
+
 // -------------media query breakpoints-------
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -253,7 +254,7 @@ right: 20px;
   .marquee {
     width: calc(100% - 7rem);
   }
-  .banner{
+  .banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,6 +525,15 @@ right: 20px;
         margin: 0 auto;
         padding-top: 50px;
       }
+  }
+}
+/*Internet Explorer specific-cide */
+@media all and (-ms-high-contrast: none),(-ms-high-contrast: active) {
+  #myVideo {
+    height: 110vh;
+  }
+  .banner {
+    height: 89vh;
   }
 }
 // -----------------------------------------------------------------
