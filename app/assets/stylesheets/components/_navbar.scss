@@ -248,13 +248,11 @@ header {
     width: 100%;
     opacity: 0;
     transform: translateY(15px);
-    a {
-      line-height: 1;
-      padding: 1.6rem 2rem;
-    }
   }
 
   .nav-link a {
+    line-height: 1;
+    padding: 1.6rem 2rem;
     transform: scale(1);
     background-color: transparent;
     &:hover {
@@ -278,7 +276,6 @@ header {
       padding-left: 0;
     }
   }
-
   .dropdown-link a {
     background-color: $second-color;
     color: $main-color;  
@@ -288,7 +285,7 @@ header {
       color: black;
     }
   }
-
+  
   .dropdown-link:not(:nth-child(1)) {
     border-top: 1px solid $main-color;
   }
