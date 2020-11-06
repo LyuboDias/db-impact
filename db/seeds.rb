@@ -15,7 +15,7 @@ puts 'Creating new staff member.'
 deep = Staff.new({
   f_name: 'Deep',
   l_name: 'Biswas',
-  job_title: 'CEO',
+  job_title: 'Founder',
   bio: 'Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.\n
   
   He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.\n
@@ -33,7 +33,7 @@ deep.save!
 lu = Staff.new({
   f_name: 'Lyubomir',
   l_name: 'Dias',
-  job_title: 'Software Engineer/Tech Lead',
+  job_title: 'Software Engineer & Tech Lead',
   bio: 'Ensured high availability of the Asset Arena Transfer Agency product via coordinated team work between domestic & offshore resources. Provide technical support to team members and members of other departments integral to the successful completion of modules.',
   email: 'lyubomirdias@gmail.com',
   phone: '0757635246'
