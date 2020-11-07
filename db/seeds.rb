@@ -9,6 +9,7 @@ require "open-uri"
 
 puts 'cleaning database'
 Staff.destroy_all
+Blog.destroy_all
 puts 'Database cleaned.'
 puts 'Creating new staff member.'
 
@@ -21,7 +22,7 @@ deep = Staff.new({
   He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.\n
   
   Amongst the range of thematic areas his experience covers, notable ones include International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.\n\n
-  
+
   He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.",
   email: 'deepbiswas@hotmail.com',
   phone: '0783635246'
