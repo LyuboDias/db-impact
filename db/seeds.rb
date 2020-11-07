@@ -16,13 +16,13 @@ deep = Staff.new({
   f_name: 'Deep',
   l_name: 'Biswas',
   job_title: 'Founder',
-  bio: 'Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.\n
+  bio: "Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.\n
   
   He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.\n
   
-  He has worked on topics such as International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.\n
-
-  He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.',
+  Amongst the range of thematic areas his experience covers, notable ones include International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.\n\n
+  
+  He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.",
   email: 'deepbiswas@hotmail.com',
   phone: '0783635246'
 })
@@ -34,7 +34,9 @@ lu = Staff.new({
   f_name: 'Lyubomir',
   l_name: 'Dias',
   job_title: 'Software Engineer & Tech Lead',
-  bio: 'Ensured high availability of the Asset Arena Transfer Agency product via coordinated team work between domestic & offshore resources. Provide technical support to team members and members of other departments integral to the successful completion of modules.',
+  bio: "Lu graduated from Le Wagon in September 2020 - it was ranked the world's number 1 coding bootcamp during his studies. He had been programming for many months prior to undergoing his intense training. Lu's forte is front-end web development, but he brings a wider range of skills as a full-stack software engineer.
+  
+  Lu has worked and continues to work in a variety of client-facing jobs including in fitness and transportation.",
   email: 'lyubomirdias@gmail.com',
   phone: '0757635246'
 })

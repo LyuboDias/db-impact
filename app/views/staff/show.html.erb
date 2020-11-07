@@ -24,7 +24,7 @@
       <p class="main-col"> <%= @staff.email %> </p>
     </div>
     <div class="staff-bio">
-      <p class="main-col"> <%= @staff.bio %></p>
+      <p class="main-col"> <%= simple_format(@staff.bio) %></p>
     </div>
   </div>
     <%= link_to 'Back', staff_index_path, class: "home-link text-center" %>
