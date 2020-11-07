@@ -24,6 +24,16 @@
       font-size: 36px;
     }
 }
+.job-title-text {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  color: #fff;
+  letter-spacing: 0.15rem;
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+}
 p {
   margin-bottom: 0;
 }
@@ -87,11 +97,9 @@ p {
 }
 
 .team-bio-header h5 {
-  text-align: left;
+  text-align: center;
   margin-top: 0;
   color: #fff;
-  // font-size: 1.5rem;
-  text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: lighter;
@@ -128,8 +136,8 @@ p {
       text-align: center;
     }
   }
-  .white {
-    font-size: 20px;
+  .job-title-text {
+    font-size: 24px;
     text-align: center;
   }
   .main-col {
@@ -153,7 +161,7 @@ p {
       font-size: 44px;
     }
   }
-  .white{
+  .job-title-text{
     font-size: 24px;
     text-align: center;
   }
