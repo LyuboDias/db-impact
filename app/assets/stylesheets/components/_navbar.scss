@@ -308,16 +308,5 @@ header {
 @media all and (-ms-high-contrast: none),(-ms-high-contrast: active) {
   .dropdown{
     z-index: 1;
-  }
-  .body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    display: auto;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
+  } 
 }

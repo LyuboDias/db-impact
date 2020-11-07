@@ -24,6 +24,9 @@
       font-size: 36px;
     }
 }
+p {
+  margin-bottom: 0;
+}
 .staff-contact {
   padding: 30px;
 }
@@ -34,18 +37,15 @@
 .staff-image {
   text-align: center;
   align-items: center;
-  width: 100%;
-  max-width: 500px;
+  max-height: 600px;
+  width: 500px;
   object-fit: cover;
-  border-radius: 5px;
-  max-height: 400px;
+  border-radius: 5px 0px 0px 5px;
 }
-
-
 .staff-job-desc {
   margin: 0 auto;
+  text-align: center;
 }
-
 .team-bio-header{
   background-color: #066579;
 }
@@ -74,7 +74,7 @@
 }
 
 .team-bio-header h2 {
-  text-align: left;
+  text-align: center;
   margin-top: 0;
   color: #fff;
   font-size: 6.5vw;
@@ -98,30 +98,23 @@
   font-style: normal;
 }
 
-
-@media only screen and (max-width: 460px) {
-  .vertical-center-row {
-    flex-direction: column;
+/* Large devices (landscape/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .rows {
+    display: flex;
   }
-}
+}  
 
-@media only screen and (max-width: 520px) {
-
-  .staff-job-desc {
-    h2 {
-      font-size: 16px;
-    }
-    h5 {
-      font-size: 14px;
-    }
-    h4 {
-      display: none;
-    }
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (max-width: 800px) {
+ 
+  .staff-image {
+    text-align: center;
+    align-items: center;
+    max-width: 320px;
+    object-fit: cover;
+    border-radius: 5px 0px 0px 5px;
   }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 780px) {
   .staff-card {
     flex-direction: column;
   }
@@ -131,21 +124,48 @@
 
   .staff-job-desc {
     h2 {
-      font-size: 30px;
+      font-size: 36px;
+      text-align: center;
     }
-    h5 {
-      font-size: 20px;
-    }
-    h4 {
-      font-size: 18px;
-    }
+  }
+  .white {
+    font-size: 20px;
+    text-align: center;
+  }
+  .main-col {
+    font-size: 18px;
   }
 }
 
-/* Large devices (landscape/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  .rows {
-    display: flex;
+@media only screen and (max-width: 500px) {
+  .staff-container {
+    width: 400px;
+  }
+  .vertical-center-row {
+    flex-direction: column;
+  }
+  .staff-image {
+    max-width: 400px;
+    max-height: 500px;
+  }
+  .staff-job-desc {
+    h2 {
+      font-size: 44px;
+    }
+  }
+  .white{
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .staff-container {
+    width: 300px;
+  }
+  .staff-image {
+    max-width: 300px;
+    max-height: 400px;
   }
 }
 
