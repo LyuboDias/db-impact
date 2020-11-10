@@ -9,6 +9,9 @@ html,body
   flex-direction: column;
   min-height: 100vh;
 }
+.main {
+  color: $main-color;
+}
 // --------------scrolling text-----------------
 .text-wrap {
   display: flex;
@@ -70,7 +73,7 @@ html,body
   height: 84vh;
   text-align: center;
   margin: 0!important;
-  
+
 }
 .banner-logo {
   width: 500px;
@@ -487,7 +490,7 @@ right: 20px;
   .banner {
     height: 94vh;
   }
-} 
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   body {

@@ -5,10 +5,20 @@
 }
 .card {
   margin: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 10px 6px #c2c2c2;
+  -moz-box-shadow:    3px 3px 10px 6px #c2c2c2;
+  box-shadow:         3px 3px 10px 6px #c2c2c2;
+  img {
+    border-radius: 10px 10px 0 0;
+  }
 }
+
 .blue {
   background-color: $main-color;
   color: white;
+  font-size: 24px;
+  padding: 4px 8px;
 }
 
 @media only screen and (max-width: 800px) {
