@@ -20,12 +20,18 @@
   <div class="staff-info ">
     <div class="staff-contact">
       <strong class="main-col">Contact <%= @staff.f_name %> </strong>
-      <p class="main-col"> <%= @staff.phone %> </p>
-      <p class="main-col"> <%= @staff.email %> </p>
+      <br>
+      <br>
+      <p class="main-col"><i class="pr-2 fas fa-mobile-alt"></i>  <%= @staff.phone %> </p>
+      <p class="main-col"><i class="pr-2 fas fa-envelope-open-text"></i>  <%= @staff.email %> </p>
     </div>
     <div class="staff-bio">
       <p class="main-col"> <%= simple_format(@staff.bio) %></p>
     </div>
   </div>
-    <%= link_to 'Back', staff_index_path, class: "home-link text-center" %>
+  <div class="text-center">
+    <%= link_to 'Back', staff_index_path, class: "btn blue" %>
+  </div>
+  <br>
+  <br>
 </div>
