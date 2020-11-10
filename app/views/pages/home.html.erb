@@ -116,48 +116,39 @@
     <%= image_tag "Tunisia-Skyline.jpg", class: "lg-photos" %>
   </div>
   <!-- -------------------contacts div ---------->
-  <div id="contacts" class="contacts">
-    <strong>Contact Us</strong>
+  <br>
+  <br>
+  <div class="container" id="contacts">
+      <h2 class="services-bigtext">Contact Us</h2>
+      <div class="pt-3">
+        <form
+          action="https://formspree.io/f/maylbwra"
+          method="POST"
+          class=" text-center form pt-4"
+        >
+          <label>
+                Full Name:<br>
+                <input type="text" name="name" class="input">
+              </label>
+          <label>
+            Email:<br>
+            <input type="text" name="_replyto" class="input">
+          </label>
+          <label>
+            Your message:<br>
+            <textarea name="message" class="text-area"></textarea>
+          </label>
 
-    <%= form_for @contact_form do |f| %>
-     <div class="field">
-       <%= f.label :name %>
-      <%= f.text_field :name, :required => true %>(required)<br /><br><br>
-     </div>
-     <div class="field">
-      <%= f.label :email %>
-      <%= f.email_field :email, :required => true %>(required)
-      <br /><br><br>
-     </div>
-      <div class="field">
-      <%= f.label :phone %>
-      <%= f.phone_field :phone %><br /><br><br>
-     </div>
-      <div class="field">
-      How did you hear about us?:<br /> <%= f.text_field :referral
-      %><br /><br><br>
-     </div>
-      <div class="field">
-      Comments (What types of wine are you
-      interested in?):<br / <%= f.text_area :message %><br /><br><br>
+          <!-- your other form fields go here -->
+
+          <button type="submit" class="btn blue">Send</button>
+        </form>
+      </div>
     </div>
-     <div class="field">
-      Submit: <%= f.submit "Create" %>
-    </div>
-
-    <% end %>
+  <div  class="contacts">
 
 
 
-
-
-
-    <!-- <ul class="inline">
-      <strong>Contacts</strong>
-      <li><i class="fas fa-phone-alt"></i> Tel: 0208 923 213</li>
-      <li><i class="fas fa-mobile-alt"></i>   Mob: 0758 6738382</li>
-      <li><i class="fas fa-envelope-open-text"></i> email: contact@bisimpact.com</li>
-    </ul> -->
     <ul class="inline">
       <strong>Address</strong>
       <li>Wood Green</li>
