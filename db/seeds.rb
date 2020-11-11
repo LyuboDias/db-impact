@@ -18,11 +18,11 @@ deep = Staff.new({
   l_name: 'Biswas',
   job_title: 'Founder',
   bio: "Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.\n
-
+  
   He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.\n
-
-  Amongst the range of thematic areas his experience covers, notable ones include International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.\n\n
-
+  
+  Amongst the range of thematic areas his experience covers, notable ones include International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.\n
+  
   He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.",
   email: 'deepbiswas@hotmail.com',
   phone: '0783635246'
@@ -35,13 +35,13 @@ lu = Staff.new({
   f_name: 'Lyubomir',
   l_name: 'Dias',
   job_title: 'Software Engineer & Tech Lead',
-  bio: "Lu graduated from Le Wagon in September 2020 - it was ranked the world's number 1 coding bootcamp during his studies. He had been programming for many months prior to undergoing his intense training. Lu's forte is front-end web development, but he brings a wider range of skills as a full-stack software engineer.
-
+  bio: "Lu graduated from Le Wagon in September 2020 - it was ranked the world's number 1 coding bootcamp during his studies. He had been programming for many months prior to undergoing his intense training. Lu's forte is front-end web development, but he brings a wider range of skills as a full-stack software engineer.\n
+  
   Lu has worked and continues to work in a variety of client-facing jobs including in fitness and transportation.",
   email: 'lyubomirdias@gmail.com',
   phone: '0757635246'
 })
-lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1603849114/Lu_Dias_2_pwpjlv.jpg")
+lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1605131368/Lu-Pro_mq99j3.png")
 lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
 lu.save!
 
