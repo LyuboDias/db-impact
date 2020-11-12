@@ -1,16 +1,22 @@
-.carousel-item {
-  
-  background-position: center;
-  background-size: cover;
-  transform: (0.9, 0.9);
-    opacity: 0.8;
-}
+  .carousel-item {
+    background-position: center;
+    background-size: cover;
+    transform: (0.9, 0.9);
+      opacity: 0.8;
+  }
 
-.service-title {
-  color: white;
-  font-size: 4.5em;
-  -webkit-text-stroke: 1px black;
-}
+  .service-title {
+    color: white;
+    font-size: 4.5em;
+    -webkit-text-stroke: 1px black;
+  }
+
+  .service-text {
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px black;
+  }
 
 // -------------media query breakpoints-------
 /* Extra small devices (phones, 600px and down) */
@@ -19,6 +25,12 @@
   color: rgba(129, 14, 49, 0.6);
   font-size: 2.5em;
   -webkit-text-stroke: 1.5px black;
+  }
+  
+  .service-text {
+    color: white;
+    font-size: 1.15em;
+    -webkit-text-stroke: 0.05px black;
   }
 }
 
