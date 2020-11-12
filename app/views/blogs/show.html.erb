@@ -25,16 +25,18 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="text-center blog-big container">
+<div class="blockquote blog-big">
   <br>
   <br>
-  <h1> <%= @blog.header %></h1>
+  <h1 class="text-center"> <%= @blog.header %></h1>
   <br>
-  <h3> <%= @blog.sub_header %></h3>
+  <h3 class="text-center"> <%= @blog.sub_header %></h3>
   <br>
-  <p><%= @blog.content %> </p>
-  <p>Author - <%= @blog.author %> <br> <%= @blog.author_info %></p>
-  <p><%= @blog.hashtags %> </p>
+  <p class="text-left"><%= simple_format(@blog.content)  %> </p>
+  <br>
+  <p class="text-center"> <strong>Author </strong> - <%= @blog.author %> <br> <%= @blog.author_info %></p>
+  <br>
+  <p class="text-center"><%= @blog.hashtags %> </p>
 </div>
 <br>
 <div class="text-center">
