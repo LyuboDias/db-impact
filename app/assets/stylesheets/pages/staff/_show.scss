@@ -1,6 +1,7 @@
 .staff-info {
   display: flex;
 }
+
 .staff-container {
   margin: 0 auto;
   width: 90%;
@@ -20,8 +21,16 @@ p {
   p {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
-
+  .linked-in {
+    color: $main-color;
+    font-size: 40px;
+  }
+  h5 {
+    display: flex;
+    justify-content: center;
+  }
 }
 .staff-bio {
   padding: 30px;
