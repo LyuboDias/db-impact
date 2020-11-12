@@ -2,9 +2,7 @@
   <br>
   <br>
   <div class="container">
-    <h1>All blogs here</h1>
-    <br>
-    <h3 class="main-col">Short and snackable insights on talent management, organizational design, agility, culture, change management, HR analytics and technology, leadership, and merger management from our experienced partners at the forefront of today’s trends.</h3>
+    <h2 class="main-col">Short and snackable insights on talent management, organizational design, agility, culture, change management, HR analytics and technology, leadership, and merger management from our experienced partners at the forefront of today’s trends.</h2>
   </div>
   <br>
   <div>
@@ -16,8 +14,9 @@
       </div>
       <div class="blog-content p-3">
         <h1><%=  b.header %> </h1>
-        <p><%= b.content.truncate(200) %> </p>
-        <p>Author -<%= b.author %> <br> <%= b.author_info %> </p>
+        <p><%= b.content.truncate(200) %>... </p>
+        <br>
+        <p> <strong>Author </strong> -<%= b.author %> <br> <%= b.author_info %> </p>
         <p><%= b.hashtags %> </p>
 
         <%= link_to 'Read more', blog_path(b) %>
