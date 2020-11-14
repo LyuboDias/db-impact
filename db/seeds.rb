@@ -23,7 +23,8 @@ deep = Staff.new({
   He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.",
   email: 'deepbiswas@hotmail.com',
   phone: '0783635246',
-  link: 'https://www.linkedin.com/in/deep-biswas-a553a752/'
+  link: 'https://www.linkedin.com/in/deep-biswas-a553a752/',
+  briefdescription: 'Management & Analysis'
 })
 deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1603417675/20190713_145510-1_gqclug.jpg")
 deep.image.attach(io: deep_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
@@ -37,7 +38,8 @@ lu = Staff.new({
   
   Lyubomir has worked and continues to work in a variety of client-facing jobs including in fitness and transportation.",
   email: 'lyubomirdias@gmail.com',
-  link: 'https://www.linkedin.com/in/lu-dias/'
+  link: 'https://www.linkedin.com/in/lu-dias/',
+  briefdescription: 'Technology & Design'
 })
 lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1605131368/Lu-Pro_mq99j3.png")
 lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
@@ -93,7 +95,7 @@ blog1 = Blog.new({
     [13] Hollands, F. M. et al. Resource Requirements and Costs of Developing and Delivering MOOCs. The International Review of Research in Open and Distance Learning 5, 114 (2014).",
   author: 'Alejandro Rodríguez-Pardo Montblanch',
   author_info: '',
-  hashtags: 'Social Impact / Blog / Fight Poverty'
+  hashtags: 'MOOCs / Education / Fight Poverty'
 })
 blog1.save!
 
