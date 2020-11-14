@@ -29,14 +29,15 @@
   <br>
   <br>
   <h1 class="text-center"> <%= @blog.header %></h1>
-  <br>
   <h3 class="text-center"> <%= @blog.sub_header %></h3>
+  <p class="text-center"><strong>Themes: </strong><%= @blog.hashtags %> </p>
   <br>
+  <div class="readable-blogtext">
   <p class="text-left"><%= simple_format(@blog.content)  %> </p>
   <br>
-  <p class="text-center"> <strong>Author </strong> - <%= @blog.author %> <br> <%= @blog.author_info %></p>
+  </div>
   <br>
-  <p class="text-center"><%= @blog.hashtags %> </p>
+  
 </div>
 <br>
 <div class="text-center">
