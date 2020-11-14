@@ -293,7 +293,9 @@ position: fixed;
 bottom: 10px;
 right: 20px;
 }
-
+.back-to-top:hover {
+color: rgba(115, 197, 201, 1);
+}
 // -------------media query breakpoints-------
 
 /* Very smallest devices (phones, 440px and down) */ 
