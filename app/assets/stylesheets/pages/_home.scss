@@ -290,9 +290,9 @@ html,body
 }
 
 .map-wrapper {
-  border:5px solid $main-color;
+  border: 2px solid $main-color;
   border-radius: 5px;
-  height:230px;
+  height: 230px;
   margin-left: 160px;
 }
 // ------back to top---------------------------
@@ -372,8 +372,6 @@ color: rgba(115, 197, 201, 1);
     font-size: 2.9em;
   }
   .map-wrapper {
-    border:5px solid $main-color;
-    height:230px;
     width: 410px;
   }
   .contacts {
@@ -480,8 +478,6 @@ color: rgba(115, 197, 201, 1);
     font-size: 2.6em;
   }
   .map-wrapper {
-    border:5px solid $main-color;
-    height:230px;
     margin: 0 auto;
   }
   .contacts {
@@ -557,9 +553,6 @@ color: rgba(115, 197, 201, 1);
     font-size: 2.9em;
   }
   .map-wrapper {
-    border:5px solid $main-color;
-    height:230px;
-    width: 410px;
     margin: 0 auto;
   }
   .contacts {
@@ -647,9 +640,6 @@ color: rgba(115, 197, 201, 1);
     font-size: 3.2em;
   }
   .map-wrapper {
-    border:5px solid $main-color;
-    height:230px;
-    width: 410px;
     margin-left: auto;
   }
   .contacts {
@@ -717,10 +707,7 @@ color: rgba(115, 197, 201, 1);
     font-size: 3.5em;
   }
   .map-wrapper {
-    border:5px solid $main-color;
     border-radius: 5px;
-    height:230px;
-    width: 410px;
     margin-left: 60px;
   }
   .contacts {
