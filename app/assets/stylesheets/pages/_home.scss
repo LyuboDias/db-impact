@@ -263,6 +263,12 @@ html,body
 .inline {
   padding-top: 0!important;
 }
+.invite-correspondance {
+  font-family: Work Sans, Helvetica, sans-serif;
+  text-align: center;
+  color: $main-color;
+  font-size: 24px;
+}
 .form {
   display: flex;
   flex-direction: column;
