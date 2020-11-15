@@ -1,8 +1,13 @@
 .button-custom:hover {
   background-color: rgba(169, 130, 15, 0.8);
-  border-radius: 10px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .button-custom {
-  border-radius: 10px;
+  background-color: $main-color;
+  color: white;
+  font-size: 24px;
+  // padding: 4px 8px;
+  border-radius: 0px 0px 5px 5px;
+  border: $main-color;
 }
