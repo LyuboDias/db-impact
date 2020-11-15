@@ -715,6 +715,7 @@ color: rgba(115, 197, 201, 1);
     color: $main-color;
     justify-content: space-around;
     padding: 30px 70px;
+    padding-top: 0;
     text-align: left;
       .map-wrapper {
         margin-left: auto;
@@ -722,13 +723,14 @@ color: rgba(115, 197, 201, 1);
       }
       .wrap-address {
         margin: auto 0;
+        font-size: 24px;
       }
   }
   .form {
     width: 100%;
     margin-left: auto;
     margin-top: 0;
-    margin-right: 75px;
+    margin-right: 120px;
   }
 }
 /*Internet Explorer specific-size */
