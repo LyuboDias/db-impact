@@ -1,5 +1,5 @@
-.blog-big {
-  color: rgb(7,101,121);
+.blog-synopsis {
+  color: rgb(30, 28, 36);
   padding: 0 30px;
 }
 .outer {
@@ -7,7 +7,7 @@
   display: flex;
   padding: 20px;
 }
-.sub-blog {
+.blog-picturetext {
   width: 40%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("China-Boats.jpg");
   // height: 300px;
@@ -25,7 +25,7 @@
   height: 280px;
   padding: 0 20px!important;
 }
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 880px) {
   .outer {
     height: 100%!important;
     flex-direction: column;
@@ -43,12 +43,12 @@
     margin: 20px auto;
     height: 100%
   }
-  .sub-blog {
+  .blog-picturetext {
     width: 90%;
     height: 200px;
   }
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1080px) {
   .outer {
     height: 350px;
     h1 {

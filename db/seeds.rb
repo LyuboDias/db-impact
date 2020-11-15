@@ -17,16 +17,14 @@ deep = Staff.new({
   f_name: 'Deep',
   l_name: 'Biswas',
   job_title: 'Founder',
-  bio: "Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.\n
-  <br/>
-  He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.\n
-  <br/>
-  Amongst the range of thematic areas his experience covers, notable ones include International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.\n
-  <br/>
+  bio: "Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.<br/>
+  He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.<br/>
+  Amongst the range of thematic areas his experience covers, notable ones include International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.<br/>
   He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.",
   email: 'deepbiswas@hotmail.com',
   phone: '0783635246',
-  link: 'https://www.linkedin.com/in/deep-biswas-a553a752/'
+  link: 'https://www.linkedin.com/in/deep-biswas-a553a752/',
+  briefdescription: 'Management & Analysis'
 })
 deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1603417675/20190713_145510-1_gqclug.jpg")
 deep.image.attach(io: deep_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
@@ -37,10 +35,11 @@ lu = Staff.new({
   l_name: 'Dias',
   job_title: 'Software Engineer & Tech Lead',
   bio: "Lyubomir graduated from Le Wagon in September 2020 - it was ranked the world's number 1 coding bootcamp during his studies. He had been programming for many months prior to undergoing his intense training. Lyubomir's forte is front-end web development, but he brings a wider range of skills as a full-stack software engineer.\n
-  <br/>
+  
   Lyubomir has worked and continues to work in a variety of client-facing jobs including in fitness and transportation.",
   email: 'lyubomirdias@gmail.com',
-  link: 'https://www.linkedin.com/in/lu-dias/'
+  link: 'https://www.linkedin.com/in/lu-dias/',
+  briefdescription: 'Technology & Design'
 })
 lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1605131368/Lu-Pro_mq99j3.png")
 lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
@@ -96,7 +95,7 @@ blog1 = Blog.new({
     [13] Hollands, F. M. et al. Resource Requirements and Costs of Developing and Delivering MOOCs. The International Review of Research in Open and Distance Learning 5, 114 (2014).",
   author: 'Alejandro Rodríguez-Pardo Montblanch',
   author_info: '',
-  hashtags: 'Social Impact / Blog / Fight Poverty'
+  hashtags: 'MOOCs / Education / Fight Poverty'
 })
 blog1.save!
 

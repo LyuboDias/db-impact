@@ -1,39 +1,36 @@
-<div class="text-center blog-big ">
+<div class="text-center blog-synopsis">
   <br>
   <br>
   <div class="container">
-    <h2 class="main-col">Short and snackable insights on talent management, organizational design, agility, culture, change management, HR analytics and technology, leadership, and merger management from our experienced partners at the forefront of today’s trends.</h2>
+    <h2 class="bisimpact-bigtext">BisImpact supports knowledge sharing; our goal is to promote innovative thinking and share lessons with our wider community.</h2>
   </div>
   <br>
+  <%# This is where the blogs start   %>
   <div>
   <br>
-  <% @blog.each do |b| %>
-    <div class="outer ">
-      <div class="sub-blog">
-        <h3><%= b.sub_header %></h3>
+    <% @blog.each do |b| %>
+      <div class="outer ">
+        <div class="blog-picturetext">
+          <h3><%= b.sub_header %></h3>
+        </div>
+        <div class="blog-content p-3">
+          <h1><%= b.header %> </h1>
+          <br>
+          <p> <strong>Author:</strong> <%= b.author %> <br> <%= b.author_info %> </p>
+          <p><strong>Themes:</strong> <%= b.hashtags %> </p>
+          <br>
+          <p><%= b.content.truncate(200) %></p>
+          <%= link_to 'Read more', blog_path(b) %>
+        </div>
       </div>
-      <div class="blog-content p-3">
-        <h1><%=  b.header %> </h1>
-        <p><%= b.content.truncate(200) %>... </p>
-        <br>
-        <p> <strong>Author </strong> -<%= b.author %> <br> <%= b.author_info %> </p>
-        <p><%= b.hashtags %> </p>
-
-        <%= link_to 'Read more', blog_path(b) %>
-      </div>
-    </div>
-
-  <br>
-  <br>
-  <% end %>
+      <br>
+      <br>
+    <% end %>
   </div>
-
 </div>
-<div class="text-center">
-  <%= link_to 'Back', root_path, class: "btn blue button-custom" %>
-</div>
-<br>
-<br>
 
-
-
+  <div class="text-center">
+    <%= link_to 'Home', root_path, class: "btn blue button-custom" %>
+  </div>
+  <br>
+  <br>

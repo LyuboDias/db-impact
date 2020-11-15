@@ -1,4 +1,4 @@
-.services-bigtext {
+.bisimpact-bigtext {
   color: #066579;
   text-align: center;
   font-size: 3em;
@@ -13,8 +13,11 @@
 // -------------media query breakpoints-------
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .services-bigtext {
-    font-size: 2em;
+
+
+  .bisimpact-bigtext {
+    font-size: 1.4em;
+
   }
   .services-description {
     font-size: 1em;
@@ -23,7 +26,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and upto 768px) */
 @media only screen and (min-width: 600px) and (max-width: 768px){
-  .services-bigtext {
+  .bisimpact-bigtext {
     font-size: 2.5em;
   }
   .services-description {
@@ -33,7 +36,7 @@
 
 /* Medium devices (portrait-mode tablets, 768px and up) */
 @media screen and (min-width: 768px) and (orientation: portrait){
-  .services-bigtext {
+  .bisimpact-bigtext {
     font-size: 3em;
   }
   .services-description {

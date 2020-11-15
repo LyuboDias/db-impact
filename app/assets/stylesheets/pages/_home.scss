@@ -189,7 +189,7 @@ html,body
   background: rgba(6, 101, 121, 0.8);
   width: 100%;
   text-align: center;
-  padding-top: 10px;
+  padding: 5px;
   font-size: 16.5px;
   color: $second-color;
   position: absolute;
@@ -201,7 +201,7 @@ html,body
   width: 100%;
   font-size: 16.5px;
   text-align: center;
-  padding-top: 10px;
+  padding: 5px;
   color: $second-color;
   position: absolute;
   bottom: 0;
@@ -211,7 +211,7 @@ html,body
   background: rgba(6, 101, 121, 0.8);
   width: 40%;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px 5px 5px 5px;
   color: $second-color;
   position: absolute;
   top: 0;
@@ -222,7 +222,7 @@ html,body
   background: rgba(169, 130, 15, .8);
   width: 40%;
   text-align: center;
-  padding-top: 10px;
+  padding: 13px;
   color:  $second-color;
   position: absolute;
   top: 0;
@@ -304,7 +304,9 @@ position: fixed;
 bottom: 10px;
 right: 20px;
 }
-
+.back-to-top:hover {
+color: rgba(115, 197, 201, 1);
+}
 // -------------media query breakpoints-------
 
 
@@ -452,11 +454,9 @@ right: 20px;
   }
   }.text-inner-box {
     width: 44%;
-    padding: 20px 0px;
     font-size: 12px;
   }
   .text-inner {
-    padding-top: 10px;
     font-size: 12px;
   }
   .text-inner-box3 {
@@ -505,6 +505,63 @@ right: 20px;
       width: 90%;
     }
   }
+
+  .grid-box-long {
+    margin-bottom: 20px;
+  }
+  .box-bottom-left { 
+    margin-top: 20px;
+  }
+  .box-bottom-left-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .grid-bottom {
+    margin-top: 20px;
+  }
+  .box-tr-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+  .box-long-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .grid-bottom-padding {
+    padding-right: 15px;
+  }
+  .text-inner-box {
+    width: 39%;
+    font-size: 14.5px;
+    padding: 12px;
+  }
+  .text-inner-box2 {
+    width: 39%;
+    padding: 25px 5px 0px 5px;
+    font-size: 14.5px;
+  }
+  .text-inner {
+    font-size: 14.5px;
+  }
+  .text-inner-box3 {
+    font-size: 14.5px;
+  }
+  .back-to-top {
+    font-size: 2.9em;
+  }
+  .map-wrapper {
+    border:5px solid $main-color;
+    height:230px;
+    width: 410px;
+    margin: 0 auto;
+  }
+  .contacts {
+    display: block;
+    padding: 30px;
+    text-align: center;
+  }
+
 }
 
 
@@ -562,8 +619,8 @@ right: 20px;
     padding-right: 15px;
   }
   .text-inner-box {
+    padding: 35px 10px 0px 10px;
     width: 45%;
-    padding: 5px 0px;
     font-size: 16.5px;
   }
   .text-inner {
@@ -639,7 +696,10 @@ right: 20px;
     padding-right: 7px;
   }
   .text-inner-box {
-    padding-top: 22px;
+    padding: 9px;
+  }
+  .text-inner-box2 {
+    padding: 15px 5px 5px 5px;
   }
   .back-to-top {
     font-size: 3.5em;
