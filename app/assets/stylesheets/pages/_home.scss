@@ -240,7 +240,10 @@ html,body
   margin-top: 30px;
   margin-bottom: 0;
   color: #066579;
-  font-size: 1.8em;
+  // font-size: 2em;
+}
+.margin-contact-us {
+  margin-top: 30px;
 }
 .contacts {
   display: flex;
@@ -248,11 +251,12 @@ html,body
   justify-content: space-around;
   padding: 20px;
   ul {
+    // text-align: center;
     padding-left: 0;
     list-style: none;
     margin-bottom: 30px!important;
-    strong {
-      font-size: 24px;
+    li {
+      opacity: 0.8;
     }
   }
 }
@@ -298,15 +302,27 @@ html,body
 // ------back to top---------------------------
 .back-to-top {
 color: $main-color;
-font-size: 4em;
-z-index: 22;
+font-size: 3em;
+z-index: 23;
 position: fixed;
-bottom: 10px;
+bottom: 25px;
 right: 20px;
 }
 .back-to-top:hover {
 color: rgba(115, 197, 201, 1);
 }
+.back-to-top2 {
+color: rgb(244,244,244);
+font-size: 3em;
+z-index: 22;
+position: fixed;
+bottom: 5px;
+right: 20px;
+}
+.back-to-top2:hover {
+color: rgba(115, 197, 201, 1);
+}
+
 // -------------media query breakpoints-------
 
 
@@ -368,6 +384,9 @@ color: rgba(115, 197, 201, 1);
   .back-to-top {
     font-size: 2.9em;
   }
+  .back-to-top2 {
+    font-size: 2.9em;
+  }
   .map-wrapper {
     border:5px solid $main-color;
     height:230px;
@@ -394,9 +413,6 @@ color: rgba(115, 197, 201, 1);
     .text-area {
       width: 90%;
     }
-  }
-  .map-wrapper {
-    width: 280px;
   }
   .inline {
     margin-bottom: 20px;
@@ -476,6 +492,9 @@ color: rgba(115, 197, 201, 1);
   .back-to-top {
     font-size: 2.6em;
   }
+  .back-to-top2 {
+    font-size: 2.6em;
+  }
   .map-wrapper {
     border:5px solid $main-color;
     height:230px;
@@ -509,7 +528,7 @@ color: rgba(115, 197, 201, 1);
   .grid-box-long {
     margin-bottom: 20px;
   }
-  .box-bottom-left { 
+  .box-bottom-left {
     margin-top: 20px;
   }
   .box-bottom-left-image {
@@ -548,6 +567,9 @@ color: rgba(115, 197, 201, 1);
     font-size: 14.5px;
   }
   .back-to-top {
+    font-size: 2.9em;
+  }
+  .back-to-top2 {
     font-size: 2.9em;
   }
   .map-wrapper {
@@ -637,6 +659,9 @@ color: rgba(115, 197, 201, 1);
   .back-to-top {
     font-size: 3.2em;
   }
+  .back-to-top2 {
+    font-size: 3.2em;
+  }
   .map-wrapper {
     border:5px solid $main-color;
     height:230px;
@@ -702,6 +727,9 @@ color: rgba(115, 197, 201, 1);
     padding: 15px 5px 5px 5px;
   }
   .back-to-top {
+    font-size: 3.5em;
+  }
+  .back-to-top2 {
     font-size: 3.5em;
   }
   .map-wrapper {
