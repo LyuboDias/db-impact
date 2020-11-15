@@ -242,9 +242,6 @@ html,body
   color: #066579;
   // font-size: 2em;
 }
-.margin-contact-us {
-  margin-top: 30px;
-}
 .contacts {
   display: flex;
   color: $main-color;
@@ -259,6 +256,7 @@ html,body
       opacity: 0.8;
     }
   }
+  margin-bottom: 30px
 }
 .inline {
   padding-top: 0!important;
