@@ -295,10 +295,6 @@ html,body
   height:230px;
   margin-left: 160px;
 }
-
-
-
-
 // ------back to top---------------------------
 .back-to-top {
 color: $main-color;
@@ -311,18 +307,6 @@ right: 20px;
 .back-to-top:hover {
 color: rgba(115, 197, 201, 1);
 }
-.back-to-top2 {
-color: rgb(244,244,244);
-font-size: 3em;
-z-index: 22;
-position: fixed;
-bottom: 5px;
-right: 20px;
-}
-.back-to-top2:hover {
-color: rgba(115, 197, 201, 1);
-}
-
 // -------------media query breakpoints-------
 
 
