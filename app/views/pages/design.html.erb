@@ -73,21 +73,36 @@
 <br>
 <h1 class="text-center"><%= link_to 'Meet Our Team', staff_index_path, class: "btn blue button-custom" %></h1>
 <br>
-<br>
+<h2 class="text-center contact-us-text "> <u>Contact Us</u> </h2>
+
 <div  class="contacts">
-    <ul class="inline">
-      <strong>Contacts</strong>
-      <li>Tel: 0208 923 213</li>
-      <li>Mob: 0758 6738382</li>
-      <li>email: contact@bisimpact.com</li>
-    </ul>
-    <ul class="inline">
-      <strong>Address</strong>
-      <li>Wood Green</li>
-      <li>London</li>
-      <li>N22</li>
-      <li>UK</li>
-    </ul>
+
+    <div>
+      <div>
+        <form
+        action="https://formspree.io/f/xvovqkpz"
+        method="POST"
+        class=" text-center form pt-4"
+        >
+          <label>
+            Full Name:<br>
+            <input type="text" name="name" class="input">
+          </label>
+          <label>
+            Email:<br>
+            <input type="text" name="_replyto" class="input">
+          </label>
+          <label>
+            Your message:<br>
+            <textarea name="message" class="text-area"></textarea>
+          </label>
+
+          <!-- your other form fields go here -->
+
+          <button type="submit" class="btn blue contact-btn">Send</button>
+        </form>
+      </div>
+    </div>
 </div>
 <br>
 
