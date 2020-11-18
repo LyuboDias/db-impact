@@ -64,8 +64,8 @@ blog1 = Blog.new({
   <br/>
   In conclusion, MOOCs are being underused but steps can be taken to increase its usage. The above discussion has been limited to access to HE by those students who cannot attend university on-campus. However, it can be extended to the case of other levels of education (such as high schools or vocational education), as well as people of other socio-economic demographics. The issues listed above are still valid even during the COVID19 pandemic. The current situation has shown that new hybrid education models will likely prevail, bringing in the advantages of online learning (faster learning) and on-campus learning (related to soft skills). Therefore, it is to be expected that in the next few years we will witness a generalised spread of MOOC usage.
   <br/>
-    References\n
-      <br/>
+    References:
+    <br/>
     [1] https://ourworldindata.org/grapher/correlation-between-mean-years-of-schooling-and-gdp-per-capita\n
 
     [2] https://www.un.org/sustainabledevelopment/\n
