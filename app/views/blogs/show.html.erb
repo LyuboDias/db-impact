@@ -26,12 +26,11 @@
   </a> -->
 </div>
 <div class="blockquote blog-big">
-<a href="#" class="back-to-top"><i class="fas fa-angle-double-up"></i></a>
-  <br>
-  <br>
+<a href="#" class="blog-back-to-top"><i class="fas fa-angle-double-up"></i></a>
   <div class="readable-blogtext">
-  <h2 class="bisimpact-bigtext"> <%= @blog.header %></h2>
-  <h3 class="text-center"> <%= @blog.sub_header %></h3>
+  <h2 class="blog-bigtext"> <%= @blog.header %></h2>
+  <br>
+  <h3 class="blog-authorname"> <%= @blog.sub_header %></h3>
   <p class="text-center"><strong>Themes: </strong><%= @blog.hashtags %> </p>
   <br>
   <p class="text-left"><%= simple_format(@blog.content)  %> </p>
