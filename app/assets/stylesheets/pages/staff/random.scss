@@ -1,0 +1,116 @@
+@media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .banner-logo {
+    width: 400px;
+  }
+  .text-big {
+    padding: 30px;
+    h2 {
+      font-size: 3.5em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+  .grid-bottom {
+    margin-top: 20px;
+  }
+  .box-long-padding{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .box-tr-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+  .box-bottom-left {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .box-bl-padding {
+    padding-right: 15px;
+  }
+  .box-bottom-left-image {
+    height: 430px;
+    object-fit: cover;
+  }
+  .grid-bottom-padding {
+    padding-right: 6px;
+  }
+  .text-inner-box {
+    padding: 35px 10px 0px 10px;
+    width: 45%;
+    font-size: 16.5px;
+  }
+  .text-inner {
+    font-size: 16.5px;
+  }
+  .text-inner-box3 {
+    font-size: 16.5px;
+  }
+  .text-inner-box2 {
+    padding-top: 33px;
+    font-size: 16.5px;
+    width: 45%;
+  }
+  .back-to-top {
+    font-size: 3.2em;
+  }
+  .back-to-top2 {
+    font-size: 3.2em;
+  }
+  .map-wrapper {
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  .contacts {
+    display: block;
+    padding: 30px;
+    text-align: center;
+  }
+  .form {
+    width: 50%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+  
+
+  .back-to-top {
+    font-size: 3.5em;
+  }
+  .back-to-top2 {
+    font-size: 3.5em;
+  }
+  .map-wrapper {
+    border-radius: 5px;
+    margin-left: 60px;
+  }
+  .contacts {
+    display: flex;
+    color: $main-color;
+    justify-content: space-around;
+    padding: 30px 70px;
+    padding-top: 0;
+    text-align: left;
+      .map-wrapper {
+        margin-left: auto;
+        margin: auto 0;
+      }
+      .wrap-address {
+        margin: auto 0;
+        font-size: 24px;
+      }
+  }
+  .form {
+    width: 100%;
+    margin-left: auto;
+    margin-top: 0;
+    margin-right: 120px;
+  }
+}
