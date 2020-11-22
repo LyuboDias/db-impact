@@ -412,6 +412,9 @@ color: rgba(115, 197, 201, 1);
   .marquee {
     width: calc(100% - 7rem);
   }
+  .marquee p {
+  animation: marquee 50s linear infinite;
+  }
   .banner {
     display: flex;
     justify-content: center;
@@ -493,9 +496,8 @@ color: rgba(115, 197, 201, 1);
     width: 100%;
     margin-top: 30px;
   }
-/* LANDSCAPE: Extra small devices (phones, 600px and down) */
-@media only screen and (max-device-height: 420px)
-{
+/* LANDSCAPE: The smallest devices (phones, 420px and down) */
+@media only screen and (max-device-height: 420px) {
   #myVideo {
     height: 125vh;
   }
@@ -508,7 +510,6 @@ color: rgba(115, 197, 201, 1);
       width: 90%;
     }
   }
-
   .grid-box-long {
     margin-bottom: 20px;
   }
@@ -564,11 +565,7 @@ color: rgba(115, 197, 201, 1);
     padding: 30px;
     text-align: center;
   }
-
 }
-
-
-
 /* Medium devices (portrait-mode tablets, 768px and up) */
 @media screen and (min-width: 768px) and (orientation: portrait){
   .banner {
