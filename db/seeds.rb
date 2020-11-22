@@ -22,7 +22,7 @@ deep = Staff.new({
   Amongst the range of thematic areas his experience covers, notable ones include International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.<br/>
   He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.",
   email: 'deepbiswas@hotmail.com',
-  phone: '0783635246',
+  phone: '07784643044',
   link: 'https://www.linkedin.com/in/deep-biswas-a553a752/',
   briefdescription: 'Management & Analysis'
 })
