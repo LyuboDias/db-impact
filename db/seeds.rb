@@ -26,7 +26,7 @@ deep = Staff.new({
   link: 'https://www.linkedin.com/in/deep-biswas-a553a752/',
   briefdescription: 'Management & Analysis'
 })
-deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1603417675/20190713_145510-1_gqclug.jpg")
+deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1606060324/6u0mwqqzal3wcqq4pti3r1rah7t2.jpg")
 deep.image.attach(io: deep_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
 deep.save!
 
@@ -41,7 +41,7 @@ lu = Staff.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
   briefdescription: 'Technology & Design'
 })
-lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1605131368/Lu-Pro_mq99j3.png")
+lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1606186809/Lu-Pro_rvifuj.png")
 lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
 lu.save!
 
