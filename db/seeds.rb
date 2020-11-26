@@ -26,7 +26,7 @@ deep = Staff.new({
   link: 'https://www.linkedin.com/in/deep-biswas-a553a752/',
   briefdescription: 'Management & Analysis'
 })
-deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1606351815/Deep-Picture_ulists.jpg")
+deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1606358785/Deep-Picture_uuyyxy.jpg")
 deep.image.attach(io: deep_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
 deep.save!
 
