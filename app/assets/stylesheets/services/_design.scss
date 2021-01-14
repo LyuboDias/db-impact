@@ -10,20 +10,53 @@
   font-size: 1.5em;
 }
 
-// -------------media query breakpoints-------
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-
-  .bisimpact-bigtext {
-    font-size: 1.4em;
-
+.contacts-services {
+  display: flex;
+  color: $main-color;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 0px;
+  ul {
+    // text-align: center;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 30px!important;
+    li {
+      opacity: 0.8;
+    }
   }
-  .services-description {
-    font-size: 1em;
-  }
+  margin-bottom: 25px;
 }
 
+// -------------media query breakpoints-------
+/* Large devices (portrait-mode tablets, */
+@media screen and (min-width: 900px) and (max-width: 992px) {
+  .contacts-services {
+    display: block;
+    padding: 0px;
+    text-align: center;
+  }
+  .form {
+    margin-top: 0px;
+  }
+}
+/* Medium devices (portrait-mode tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait){
+  .bisimpact-bigtext {
+    font-size: 3em;
+  }
+  .services-description {
+    font-size: 1.5em;
+  }
+  .contacts-services {
+    display: block;
+    padding:  0px 30px 0px 30px;
+    text-align: center;
+  }
+  .form {
+    margin-top: 0px;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and upto 768px) */
 @media only screen and (min-width: 600px) and (max-width: 768px){
   .bisimpact-bigtext {
@@ -32,15 +65,39 @@
   .services-description {
     font-size: 1.2em;
   }
+  .contacts-services {
+    display: block;
+    padding:  0px 30px 0px 30px;
+    text-align: center;
+  }
+  .form {
+    margin-top: 0px;
+  }
 }
-
-/* Medium devices (portrait-mode tablets, 768px and up) */
-@media screen and (min-width: 768px) and (orientation: portrait){
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .bisimpact-bigtext {
-    font-size: 3em;
+    font-size: 1.4em;
+
   }
   .services-description {
-    font-size: 1.5em;
+    font-size: 1em;
+  }
+  .contacts-services {
+    display: block;
+    padding: 0px 70px 0px 70px;
+    text-align: center;
+  }
+  .form {
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 }
-
+/* The smallest devices (phones, 440px and down) */
+@media only screen and (max-width: 440px) {
+  .contacts-services {
+    display: block;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+  }
+}

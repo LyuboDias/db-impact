@@ -48,6 +48,15 @@ ActiveRecord::Schema.define(version: 2020_11_14_134419) do
     t.text "content"
   end
 
+  create_table "contacts", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.float "latitude"
+    t.float "longitude"
+  end
+
   create_table "staffs", force: :cascade do |t|
     t.string "f_name"
     t.string "l_name"
