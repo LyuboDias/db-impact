@@ -1,4 +1,5 @@
-
+html,
+body {
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -258,7 +259,7 @@
       opacity: 0.8;
     }
   }
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 .inline {
   padding-top: 0 !important;
@@ -296,7 +297,6 @@
 }
 
 .map-wrapper {
-
   border: 2px solid $main-color;
 
   border-radius: 5px;
@@ -393,7 +393,6 @@
     font-size: 2.9em;
   }
   .map-wrapper {
-
     border: 5px solid $main-color;
     height: 230px;
 
@@ -436,7 +435,7 @@
     width: calc(100% - 7rem);
   }
   .marquee p {
-  animation: marquee 50s linear infinite;
+    animation: marquee 50s linear infinite;
   }
   .banner {
     display: flex;
@@ -480,7 +479,6 @@
     font-size: 12px;
     padding: 40px 0px;
   }
-
 }
 .text-inner-box {
   width: 44%;
@@ -523,48 +521,6 @@
   width: 100%;
   margin-top: 30px;
 }
-/* LANDSCAPE: Extra small devices (phones, 600px and down) */
-
-  }.text-inner-box {
-    width: 44%;
-    font-size: 12px;
-  }
-  .text-inner {
-    font-size: 12px;
-  }
-  .text-inner-box3 {
-    font-size: 12px;
-  }
-  .box-long-padding{
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .box-tr-padding{
-    padding-left: 0px;
-    margin-bottom: 0px;
-  }
-  .grid-bottom-padding {
-    padding-right: 15px;
-  }
-  .back-to-top {
-    font-size: 2.6em;
-  }
-  .back-to-top2 {
-    font-size: 2.6em;
-  }
-  .map-wrapper {
-    margin: 0 auto;
-    margin-bottom: 30px;
-  }
-  .contacts {
-    display: block;
-    padding: 30px 30px 0px 30px;
-    text-align: center;
-  }
-  .form {
-    width: 100%;
-    margin-top: 30px;
-  }
 /* LANDSCAPE: The smallest devices (phones, 420px and down) */
 
 @media only screen and (max-device-height: 420px) {
@@ -628,7 +584,6 @@
     font-size: 2.9em;
   }
   .map-wrapper {
-
     border: 5px solid $main-color;
     height: 230px;
     width: 410px;
@@ -717,7 +672,6 @@
     font-size: 3.2em;
   }
   .map-wrapper {
-
     border: 5px solid $main-color;
     height: 230px;
     width: 410px;
@@ -790,7 +744,6 @@
     font-size: 3.5em;
   }
   .map-wrapper {
-
     border: 5px solid $main-color;
     border-radius: 5px;
     height: 230px;
@@ -816,15 +769,14 @@
       margin: auto 0;
     }
 
-      .map-wrapper {
-        margin-left: auto;
-        margin: auto 0;
-      }
-      .wrap-address {
-        margin: auto 0;
-        font-size: 24px;
-      }
-
+    .map-wrapper {
+      margin-left: auto;
+      margin: auto 0;
+    }
+    .wrap-address {
+      margin: auto 0;
+      font-size: 24px;
+    }
   }
   .form {
     width: 100%;
@@ -845,7 +797,6 @@
   body {
     display: auto;
   }
-
 }
 
 // ----------cookies modal---------
@@ -967,6 +918,3 @@
   max-width: 100%;
   transition: color 200ms, background-color 200ms, border-color 200ms;
 }
-
-}
-
