@@ -6,9 +6,6 @@ Rails.application.routes.draw do
   resources :blogs, only: [:index, :show, :new, :create]
   get '/videos' => 'pages#videos'
   get '/design' => 'pages#design'
-  get '/terms-of-use' => 'pages#terms'
-  get '/privacy-policy' => 'pages#policy'
   get '/sustainability' => 'pages#sustainability'
   get '/transformation' => 'pages#transformation'
 end
- 
