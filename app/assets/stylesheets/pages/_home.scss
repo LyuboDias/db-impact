@@ -298,12 +298,10 @@ body {
 
 .map-wrapper {
   border: 2px solid $main-color;
-
   border-radius: 5px;
   height: 230px;
   margin-left: 160px;
 }
-
 // ------back to top---------------------------
 .back-to-top {
   color: $main-color;
@@ -340,7 +338,6 @@ body {
 .back-to-top2:hover {
   color: rgba(115, 197, 201, 1);
 }
-
 // -------------media query breakpoints-------
 
 /* Small devices (portrait tablets and large phones, 600px and upto 768px) */
@@ -407,7 +404,6 @@ body {
   .map-wrapper {
     border: 5px solid $main-color;
     height: 230px;
-
     width: 410px;
   }
   .contacts {
@@ -419,25 +415,6 @@ body {
     width: 70% !important;
   }
 }
-
-/* Very smallest devices (phones, 440px and down) */
-
-@media only screen and (max-width: 440px) {
-  .form {
-    width: 100% !important;
-    // margin: 0;
-    input {
-      width: 90%;
-    }
-    .text-area {
-      width: 90%;
-    }
-  }
-  .inline {
-    margin-bottom: 20px;
-  }
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .latest-news {
@@ -533,8 +510,8 @@ body {
   width: 100%;
   margin-top: 30px;
 }
-/* LANDSCAPE: The smallest devices (phones, 420px and down) */
 
+/* LANDSCAPE: The smallest devices (phones, 420px and down) */
 @media only screen and (max-device-height: 420px) {
   #myVideo {
     height: 125vh;
@@ -599,7 +576,6 @@ body {
     border: 5px solid $main-color;
     height: 230px;
     width: 410px;
-
     margin: 0 auto;
   }
   .contacts {
@@ -608,7 +584,6 @@ body {
     text-align: center;
   }
 }
-
 /* Medium devices (portrait-mode tablets, 768px and up) */
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .banner {
@@ -687,7 +662,6 @@ body {
     border: 5px solid $main-color;
     height: 230px;
     width: 410px;
-
     margin-left: auto;
     margin-bottom: 30px;
   }
@@ -760,10 +734,6 @@ body {
     border-radius: 5px;
     height: 230px;
     width: 410px;
-
-    border-radius: 5px;
-
-    margin-left: 60px;
   }
   .contacts {
     display: flex;
