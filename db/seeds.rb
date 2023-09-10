@@ -17,10 +17,12 @@ deep = Staff.new({
   f_name: 'Deep',
   l_name: 'Biswas',
   job_title: 'Founder',
-  bio: "Debdipto (Deep) Biswas was born in London to immigrant parents, and grew up as a third-culture kid speaking Bengali at home.<br/>
-  He has worked in a series of international development/policy roles in both the public and private sectors for organisations such as the Foreign and Commonwealth Office (FCO), Dalberg Global Development Advisors and the Department for International Development (DFID). His experience covers the UK, Switzerland, Uganda, Nigeria, Tunisia, Sudan and as a diplomat in Tanzania, where he was the youngest in the whole High Commission.<br/>
-  Amongst the range of thematic areas his experience covers, notable ones include International Trade, International Finance Institutions, Sustainble Private Sector Growth and Agri-Business.<br/>
-  He holds a BA (Hons) Philosophy, Politics and Economics (PPE) from the University of Warwick and an MPhil in Development Studies from the University of Cambridge, Jesus College, where he achieved the PhD threshold in all his modules.",
+  bio: "Post-Harvard MBA, I have become a Special Adviser to the Chief of Planning of Boston. Through public policy, my work focuses on stimulating real estate development in the city.
+
+  Pre-MBA, I spent most of my career as a Development Economist/Diplomat, leading solutions to some of the world’s biggest problems. My roles included being a government lead on International Trade (for the World Trade Organisation), Development Finance (as the UK’s World Bank Economist), Aid Programming, and interacting regularly with C-level staff to business plan a newly formed UK Government institution of ~10,000 personnel.
+  
+  Complementing my public service, I have taken opportunities in the private sector working for the leading international development strategy consultancy - Dalberg in Geneva, Switzerland, for a not-for-profit - TechnoServe in Abidjan, Cote d’Ivoire, and in venture capital for Atento Capital in Tulsa, Oklahoma.
+  ",
   email: 'deepbiswas@hotmail.com',
   phone: '07784643044',
   link: 'https://www.linkedin.com/in/deep-biswas-a553a752/',
