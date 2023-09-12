@@ -20,7 +20,7 @@ deep = Staff.new({
   bio: "Post-Harvard MBA, I have become a Special Adviser to the Chief of Planning of Boston. Through public policy, my work focuses on stimulating real estate development in the city.
 
   Pre-MBA, I spent most of my career as a Development Economist/Diplomat, leading solutions to some of the world’s biggest problems. My roles included being a government lead on International Trade (for the World Trade Organisation), Development Finance (as the UK’s World Bank Economist), Aid Programming, and interacting regularly with C-level staff to business plan a newly formed UK Government institution of ~10,000 personnel.
-  dd
+  
   Complementing my public service, I have taken opportunities in the private sector working for the leading international development strategy consultancy - Dalberg in Geneva, Switzerland, for a not-for-profit - TechnoServe in Abidjan, Cote d’Ivoire, and in venture capital for Atento Capital in Tulsa, Oklahoma.
   ",
   email: 'deepbiswas@hotmail.com',
