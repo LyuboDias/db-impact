@@ -22,7 +22,7 @@ deep = Staff.new({
   Prior to his MBA, Deep spent most of his career as a Development Economist/Diplomat, leading solutions to some of the world’s biggest problems. His roles included being a government lead on International Trade (for the World Trade Organisation), Development Finance (as the UK’s World Bank Economist), Aid Programming, and interacting regularly with C-level staff to business plan a newly formed UK Government institution of ~10,000 personnel.
   
   Complementing his public service, Deep has taken opportunities in the private sector working for the leading international development strategy consultancy - Dalberg in Geneva, Switzerland, for a not-for-profit - TechnoServe in Abidjan, Cote d’Ivoire, and in venture capital for Atento Capital in Tulsa, Oklahoma.
-
+  
   Deep holds a MBA with Distinction from Harvard Business School, the graduate business school of Harvard University and a MPhil in Development Studies from Jesus College, University of Cambridge.
   ",
   email: 'deepbiswas@hotmail.com',
@@ -40,9 +40,9 @@ lu = Staff.new({
   job_title: 'Software Engineer & Tech Lead',
   bio: "Lyubomir graduated from Le Wagon in September 2020 - it was ranked the world's number 1 coding bootcamp during his studies. He had been programming for many months prior to undergoing his intense training. Lyubomir's forte is front-end web development, but he brings a wider range of skills as a full-stack software engineer.\n
   
-  Lyubomir has worked and continues to work in a variety of client-facing jobs including in fitness and transportation.",
+  Lyubomir is currently a Javascript Software Engineer with Kindred Group having been a Junior Web Developer with Brezaa.",
   email: 'lyubomirdias@gmail.com',
-  link: 'https://www.linkedin.com/in/lu-dias/',
+  link: 'https://www.linkedin.com/in/lyubomir-dias/',
   briefdescription: 'Technology & Design'
 })
 lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1694488244/5j5upi08edxy8x6mlnwx759e53yq.png")
