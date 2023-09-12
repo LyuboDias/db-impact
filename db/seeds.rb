@@ -17,18 +17,20 @@ deep = Staff.new({
   f_name: 'Deep',
   l_name: 'Biswas',
   job_title: 'Founder',
-  bio: "Post-Harvard MBA, I have become a Special Adviser to the Chief of Planning of Boston. Through public policy, my work focuses on stimulating real estate development in the city.
-
-  Pre-MBA, I spent most of my career as a Development Economist/Diplomat, leading solutions to some of the world’s biggest problems. My roles included being a government lead on International Trade (for the World Trade Organisation), Development Finance (as the UK’s World Bank Economist), Aid Programming, and interacting regularly with C-level staff to business plan a newly formed UK Government institution of ~10,000 personnel.
+  bio: "Deep recently became a Special Adviser to the Chief of Planning of the City of Boston. Through public policy, his work focuses on stimulating real estate development in the city.
   
-  Complementing my public service, I have taken opportunities in the private sector working for the leading international development strategy consultancy - Dalberg in Geneva, Switzerland, for a not-for-profit - TechnoServe in Abidjan, Cote d’Ivoire, and in venture capital for Atento Capital in Tulsa, Oklahoma.
+  Prior to his MBA, Deep spent most of his career as a Development Economist/Diplomat, leading solutions to some of the world’s biggest problems. His roles included being a government lead on International Trade (for the World Trade Organisation), Development Finance (as the UK’s World Bank Economist), Aid Programming, and interacting regularly with C-level staff to business plan a newly formed UK Government institution of ~10,000 personnel.
+  
+  Complementing his public service, Deep has taken opportunities in the private sector working for the leading international development strategy consultancy - Dalberg in Geneva, Switzerland, for a not-for-profit - TechnoServe in Abidjan, Cote d’Ivoire, and in venture capital for Atento Capital in Tulsa, Oklahoma.
+
+  Deep holds a MBA with Distinction from Harvard Business School, the graduate business school of Harvard University and a MPhil in Development Studies from Jesus College, University of Cambridge.
   ",
   email: 'deepbiswas@hotmail.com',
   phone: '07784643044',
   link: 'https://www.linkedin.com/in/deep-biswas-a553a752/',
   briefdescription: 'Management & Analysis'
 })
-deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1606358785/Deep-Picture_uuyyxy.jpg")
+deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1694488861/Edit_nqpl3s.jpg")
 deep.image.attach(io: deep_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
 deep.save!
 
@@ -43,10 +45,28 @@ lu = Staff.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
   briefdescription: 'Technology & Design'
 })
-lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1606186809/Lu-Pro_rvifuj.png")
+lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1694488244/5j5upi08edxy8x6mlnwx759e53yq.png")
 lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
 lu.save!
 
+maria = Staff.new({
+  f_name: 'Maria',
+  l_name: 'Stavridou',
+  job_title: 'Economist (Health)',
+  bio: "Maria has over seven years of experience working across the private and public sectors, and multilateral organizations, and has conducted economic and policy work, focusing on cost-benefit and return on investment analyses, budget modelling, and business case development across 15+ countries. 
+ 
+  She has supported the Ministry of Health in Saudi Arabia with the design and implementation of a new model of care, where among others she trained government officials in the use of health technology assessment approaches for priority setting. As a health economist for Public Health England, she led the economic case for investment in the newly established UK Health Security Agency, pivotal in securing ~£600mn of investment in the newly created Government Agency. Most recently, she supported health financing reforms focusing on provider payment methods in Tunisia and Morocco for the World Bank. 
+  
+  Maria holds an MPH in Global Health from the Harvard T.H. Chan School of Public Health and a Master of Science in Economics from the University of Warwick.
+  ",
+  email: 'Mc.stavridou@gmail.com',
+  phone: '617 201 2223',
+  link: 'https://www.linkedin.com/in/mariachristinastavridou/',
+  briefdescription: 'Management & Analysis'
+})
+maria_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1694488601/egec0lfzylh4z3v2ejzaoh7pua8p.png")
+maria.image.attach(io: maria_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
+maria.save!
 
 
 blog1 = Blog.new({
