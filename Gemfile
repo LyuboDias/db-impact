@@ -33,7 +33,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 
 gem 'autoprefixer-rails'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 5.15'
 gem 'simple_form'
 gem 'psych', '< 4'
 group :development, :test do  gem 'pry-byebug'
