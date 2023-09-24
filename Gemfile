@@ -34,6 +34,7 @@ gem 'devise'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 6.4.2'
+gem 'sassc'
 gem 'simple_form'
 gem 'psych', '< 4'
 group :development, :test do  gem 'pry-byebug'
