@@ -285,7 +285,7 @@ DEPENDENCIES
   cloudinary (~> 1.16.0)
   devise
   dotenv-rails
-  font-awesome-sass (~> 6.4.2)
+  font-awesome-sass
   friendly_id (~> 5.4.0)
   geocoder
   jbuilder (~> 2.7)
