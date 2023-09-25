@@ -19,5 +19,7 @@ module DbImpact
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    config.active_storage.service = :cloudinary
+    # Update your application.rb or specific environment configuration file to use Cloudinary as the storage service
   end
 end
