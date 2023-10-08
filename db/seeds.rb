@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require "open-uri"
+require 'open-uri'
 
 puts 'Cleaning database'
 Staff.destroy_all
@@ -30,7 +30,7 @@ deep = Staff.new({
   link: 'https://www.linkedin.com/in/deep-biswas-a553a752/',
   briefdescription: 'Management & Analysis'
 })
-deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1694488861/Edit_nqpl3s.jpg")
+deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1695580093/znjoe1og73jyotf8t6l7au67ims7.jpg")
 deep.image.attach(io: deep_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
 deep.save!
 
@@ -53,8 +53,7 @@ maria = Staff.new({
   f_name: 'Maria',
   l_name: 'Stavridou',
   job_title: 'Economist (Health)',
-  bio: "Maria has over seven years of experience working across the private and public sectors, and multilateral organizations, and has conducted economic and policy work, focusing on cost-benefit and return on investment analyses, budget modelling, and business case development across 15+ countries. 
- 
+  bio: "Maria has over seven years of experience working across the private and public sectors, and multilateral organizations, and has conducted economic and policy work, focusing on cost-benefit and return on investment analyses, budget modelling, and business case development across 15+ countries. <br/>
   She has supported the Ministry of Health in Saudi Arabia with the design and implementation of a new model of care, where among others she trained government officials in the use of health technology assessment approaches for priority setting. As a health economist for Public Health England, she led the economic case for investment in the newly established UK Health Security Agency, pivotal in securing ~£600mn of investment in the newly created Government Agency. Most recently, she supported health financing reforms focusing on provider payment methods in Tunisia and Morocco for the World Bank. 
   
   Maria holds an MPH in Global Health from the Harvard T.H. Chan School of Public Health and a Master of Science in Economics from the University of Warwick.
@@ -64,16 +63,32 @@ maria = Staff.new({
   link: 'https://www.linkedin.com/in/mariachristinastavridou/',
   briefdescription: 'Management & Analysis'
 })
-maria_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1694488601/egec0lfzylh4z3v2ejzaoh7pua8p.png")
+maria_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1696798831/Maria_Headshot_V2_rnqbq1.jpg")
 maria.image.attach(io: maria_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
 maria.save!
 
+gregor = Staff.new({
+  f_name: 'Gregor',
+  l_name: 'Weck',
+  job_title: 'Finance and Sports Industry Analyst',
+  bio: "Gregor is a Master of Science candidate at Vanderbilt University, where he is further honing his skills and expanding his knowledge in the field of financial mathematics. He has professional experience in Private Equity, Consulting, and Venture Capital across Europe and North America.  <br/>
+  Prior to his M.Sc., Gregor worked on due diligence for leading European financial services firms, developed several investment theses, and conducted buyout & minority investment analyses across the renewable energy software and healthcare technology industries. Most recently he advised high-growth technology businesses on corporate finance and growth strategies. 
+  
+  Gregor holds a B.Sc. in Psychology with Distinction and a B.BA. in Finance with Distinction and competed as team captain for the university's NCAA Men’s Golf team.",
+  email: 'gregor.weck@vanderbilt.edu',
+  phone: '+49 160 91923705',
+  link: 'https://www.linkedin.com/in/gregorweck/',
+  briefdescription: 'Analysis'
+})
+gregor_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1696797736/Gregor_Headshot_V11_d95drs.jpg")
+gregor.image.attach(io: gregor_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
+gregor.save!
 
 blog1 = Blog.new({
   header: 'Massive Open Online Courses as a tool to fight poverty.',
   sub_header: 'by Alejandro Rodríguez-Pardo Montblanch',
   content: "The education level of a country and its GDP per capita are highly correlated[1]. Consequently, education has been identified by the United Nations (UN) as one of the essential pillars on which the fight against poverty is sustained (goal 4 of the UN Sustainable Development Goals[2]). Among the most relevant innovations that have emerged in this field within the last 10 years are Massive Open Online Courses[3], or MOOCs. Generally, MOOC platforms provide non-official higher education (HE) certificates and job-oriented training from well-established education institutions at prices tens of times lower than their on-campus counterparts, without losing the quality of the learning material[4]. These factors have attracted an increasing number of learners over the years, reaching 100 million in 2019[5], and before the COVID19 pandemic it was expected to continue growing at a rate of 10% annually[6] – under the current situation, the number of MOOC users has sky-rocketed[7], and the long-term consequences are yet to be seen.
-  <br/>
+
   MOOCs have contributed to the democratisation of education, providing access to tertiary education from HE institutions to millions of people at a cheaper price and regardless of location. In low- and middle-income countries (LMICs), the most important motivation to take up MOOCs is related to the job market; completion rates of MOOCs are higher compared to high-income countries (HICs) by roughly 30 percentage points; and reported tangible job benefits are largest among users in LMICs by 4 percentage points compared to HICs[8]. From the perspective of governments and local institutions in LMICs, the developing of their own MOOC platforms is an opportunity to provide HE to people in remote areas, reduce the overall cost of education and, because the majority of the most widely used MOOC platforms are Western-based and in English, tailor the curricula based on the local needs and educate in the local language.
   <br/>
   In spite of the above, MOOCs are still underused. On the demand side, users from LMICs account for roughly 1/3 of all MOOC users[9], i.e. roughly 30 million people, of which 50% do not already hold a university degree and 40% are below the age of 25[10], totalling 6 million people. Based on the fact that current college attendance in lower-income countries is 24% over the students aged 19-25[11], and that the likelihood of attending college is double as much for people in the top tercile of income as those in the middle tercile[12], an estimate on the number of people who cannot attend college because of the lack of sufficient funds is roughly 50 million in LMICs. Although this estimate accounts only for one specific age range, it already shows that the potential market for MOOCs is several times its current use for learners who might wish to pursue a university degree but aren’t able to in LMICs.
