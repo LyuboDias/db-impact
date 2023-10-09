@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 require 'open-uri'
 
 puts 'Cleaning database'
@@ -30,8 +23,8 @@ deep = Staff.new({
   link: 'https://www.linkedin.com/in/deep-biswas-a553a752/',
   briefdescription: 'Management & Analysis'
 })
-deep_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1695580093/znjoe1og73jyotf8t6l7au67ims7.jpg")
-deep.image.attach(io: deep_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
+deep.image.attach( io: File.open(Rails.root.join('db/images/Deep_Headshot_Website.jpg')),
+filename: 'Deep_Headshot_Website.jpg')
 deep.save!
 
 lu = Staff.new({
@@ -45,8 +38,9 @@ lu = Staff.new({
   link: 'https://www.linkedin.com/in/lyubomir-dias/',
   briefdescription: 'Technology & Design'
 })
-lu_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1694488244/5j5upi08edxy8x6mlnwx759e53yq.png")
-lu.image.attach(io: lu_pic, filename: "lu_pic.jpg", content_type: "image/jpg")
+
+lu.image.attach( io: File.open(Rails.root.join('db/images/Lu_Headshot_Websiteready.png')),
+filename: 'Lu_Headshot_Websiteready.png')
 lu.save!
 
 maria = Staff.new({
@@ -63,8 +57,8 @@ maria = Staff.new({
   link: 'https://www.linkedin.com/in/mariachristinastavridou/',
   briefdescription: 'Management & Analysis'
 })
-maria_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1696798831/Maria_Headshot_V2_rnqbq1.jpg")
-maria.image.attach(io: maria_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
+maria.image.attach( io: File.open(Rails.root.join('db/images/Maria_Headshot_WebsiteReady.JPG')),
+filename: 'Maria_Headshot_WebsiteReady.JPG')
 maria.save!
 
 gregor = Staff.new({
@@ -80,8 +74,8 @@ gregor = Staff.new({
   link: 'https://www.linkedin.com/in/gregorweck/',
   briefdescription: 'Analysis'
 })
-gregor_pic = URI.open("https://res.cloudinary.com/dhoxwyrvn/image/upload/v1696797736/Gregor_Headshot_V11_d95drs.jpg")
-gregor.image.attach(io: gregor_pic, filename: "deep_pic.jpg", content_type: "image/jpg")
+gregor.image.attach( io: File.open(Rails.root.join('db/images/Gregor_Headshot_WebsiteReady.jpg')),
+filename: 'Gregor_Headshot_WebsiteReady.jpg')
 gregor.save!
 
 blog1 = Blog.new({
@@ -135,23 +129,6 @@ blog1 = Blog.new({
   hashtags: 'MOOCs / Education / Fight Poverty'
 })
 blog1.save!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 puts "Seeding is finished"
 
