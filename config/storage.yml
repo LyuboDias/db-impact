@@ -8,7 +8,6 @@ local:
 
 cloudinary:
   service: cloudinary
-  folder: <%= Rails.env %>
   cloud_name: "dhoxwyrvn"
   api_key: "565245352138676"
   api_secret: "wUUVVuQNg9MatV0F4DgU5kodwGI"
