@@ -8,10 +8,11 @@ local:
 
 cloudinary:
   service: cloudinary
-  cloud_name: "dhoxwyrvn"
-  api_key: "565245352138676"
-  api_secret: "wUUVVuQNg9MatV0F4DgU5kodwGI"
-  secure: true
+  folder: <%= Rails.env %>
+#  cloud_name: "dhoxwyrvn"
+#  api_key: "565245352138676"
+#  api_secret: "wUUVVuQNg9MatV0F4DgU5kodwGI"
+#  secure: true
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
 #   service: S3
